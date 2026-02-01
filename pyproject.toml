@@ -1,0 +1,14 @@
+[project]
+name = "health-equity-challenge-ii"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "dash>=3.4.0",
+    "folium>=0.20.0",
+    "geopandas>=1.1.2",
+    "pandas>=2.3.3",
+    "plotly>=6.5.2",
+    "pygris>=0.2.1",
+]

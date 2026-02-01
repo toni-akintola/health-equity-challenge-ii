@@ -1,0 +1,118 @@
+{
+  "states": [
+    "AK",
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "PR",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "indicators": [
+    {
+      "value": "P_PM25",
+      "label": "PM 2.5"
+    },
+    {
+      "value": "P_OZONE",
+      "label": "Ozone"
+    },
+    {
+      "value": "P_DSLPM",
+      "label": "Diesel PM"
+    },
+    {
+      "value": "P_CANCER",
+      "label": "Cancer Risk"
+    },
+    {
+      "value": "P_RESP",
+      "label": "Respiratory Hazard"
+    },
+    {
+      "value": "P_RSEI_AIR",
+      "label": "RSEI Air"
+    },
+    {
+      "value": "P_PTRAF",
+      "label": "Traffic Proximity"
+    },
+    {
+      "value": "P_LDPNT",
+      "label": "Lead Paint"
+    },
+    {
+      "value": "P_PNPL",
+      "label": "NPL Sites"
+    },
+    {
+      "value": "P_PRMP",
+      "label": "RMP Facilities"
+    },
+    {
+      "value": "P_PTSDF",
+      "label": "TSDF Proximity"
+    },
+    {
+      "value": "P_UST",
+      "label": "UST Proximity"
+    },
+    {
+      "value": "P_PWDIS",
+      "label": "Wastewater Discharge"
+    },
+    {
+      "value": "P_LOWINCPCT",
+      "label": "Low Income %"
+    },
+    {
+      "value": "P_PEOPCOLORPCT",
+      "label": "People of Color %"
+    }
+  ]
+}
