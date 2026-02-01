@@ -208,7 +208,7 @@ export function EJScreenMap() {
   const stateOptions = manifest?.states ?? [];
 
   return (
-    <div className="flex h-full min-h-[400px]">
+    <div className="flex h-full min-h-0 w-full">
       <aside className="w-64 shrink-0 border-r bg-white p-4 flex flex-col gap-4">
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">
@@ -251,7 +251,7 @@ export function EJScreenMap() {
           </select>
         </div>
       </aside>
-      <div className="flex-1 relative">
+      <div className="flex-1 min-h-[420px] relative z-0 isolate">
         <Map
           ref={mapRef}
           mapStyle={CARTO_POSITRON}
@@ -260,7 +260,7 @@ export function EJScreenMap() {
             latitude: 40.3,
             zoom: 5,
           }}
-          style={{ width: "100%", height: "100%" }}
+          style={{ width: "100%", height: "100%", minHeight: 420 }}
           onMouseMove={onHover}
           onMouseLeave={() => setHoverInfo(null)}
           onClick={onClick}
