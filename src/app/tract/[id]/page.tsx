@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTractById, type TractRecord } from "@/lib/tract-data";
+import { getTractById, type TractRecord } from "@/src/lib/tract-data";
 
 // Group CSV columns into sections for the detail page
 const SECTIONS: { title: string; keys: string[] }[] = [

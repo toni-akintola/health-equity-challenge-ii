@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getTractById } from "@/lib/tract-data";
+import { getTractById } from "@/src/lib/tract-data";
 
 export async function GET(
   _request: Request,

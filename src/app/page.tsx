@@ -1,4 +1,4 @@
-import { EJScreenMap } from "@/components/EJScreenMap";
+import { EJScreenMap } from "@/src/components/EJScreenMap";
 
 export default function Home() {
   return (

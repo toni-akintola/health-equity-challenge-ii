@@ -19,3 +19,4 @@ node_modules/
 *.tsbuildinfo
 
 EJSCREEN_2023_Tracts_StatePct_with_AS_CNMI_GU_VI.csv
+.vercel
