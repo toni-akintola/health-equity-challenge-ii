@@ -9,11 +9,24 @@ import Map, {
   type MapRef,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { getShapFeatureLabel } from "@/src/lib/shap-labels";
 
 function geoid11(id: number | string): string {
   const num = String(id).replace(/\D/g, "");
   return num.padStart(11, "0");
 }
+
+type TractShapEntry = {
+  feature: string;
+  shap: number;
+};
+
+type TractShapData = {
+  cancer: TractShapEntry[];
+  resp: TractShapEntry[];
+};
+
+type ShapByState = Record<string, Record<string, TractShapData>>;
 
 const MANIFEST_URL = "/geojson/manifest.json";
 const CARTO_POSITRON =
@@ -51,7 +64,7 @@ function getMinMax(data: GeoJSONFC, field: string): [number, number] {
 }
 
 function getGeoJSONBounds(
-  fc: GeoJSONFC
+  fc: GeoJSONFC,
 ): [[number, number], [number, number]] | null {
   let minLng = Infinity;
   let minLat = Infinity;
@@ -59,7 +72,11 @@ function getGeoJSONBounds(
   let maxLat = -Infinity;
 
   function addCoord(coord: number[]): void {
-    if (coord.length >= 2 && typeof coord[0] === "number" && typeof coord[1] === "number") {
+    if (
+      coord.length >= 2 &&
+      typeof coord[0] === "number" &&
+      typeof coord[1] === "number"
+    ) {
       const [lng, lat] = coord;
       minLng = Math.min(minLng, lng);
       minLat = Math.min(minLat, lat);
@@ -112,6 +129,19 @@ export function EJScreenMap() {
     y: number;
     props: TractProperties;
   } | null>(null);
+  const [shapByState, setShapByState] = useState<ShapByState>({});
+
+  // Load SHAP for the clicked tract's state when needed
+  useEffect(() => {
+    const state = clickedTract?.props.ST_ABBREV;
+    if (!state || shapByState[state] !== undefined) return;
+    fetch(`/data/shap/${state}.json`)
+      .then((r) => (r.ok ? r.json() : {}))
+      .then((data: Record<string, TractShapData>) =>
+        setShapByState((prev) => ({ ...prev, [state]: data ?? {} })),
+      )
+      .catch(() => setShapByState((prev) => ({ ...prev, [state]: {} })));
+  }, [clickedTract?.props.ST_ABBREV, shapByState]);
 
   // Load manifest
   useEffect(() => {
@@ -281,41 +311,101 @@ export function EJScreenMap() {
           >
             <div className="font-medium">{hoverInfo.props.CNTY_NAME}</div>
             <div>
-              {indicatorOptions.find((o) => o.value === indicator)?.label ?? indicator}:{" "}
+              {indicatorOptions.find((o) => o.value === indicator)?.label ??
+                indicator}
+              :{" "}
               {typeof hoverInfo.props[indicator] === "number"
                 ? Number(hoverInfo.props[indicator]).toFixed(1)
                 : String(hoverInfo.props[indicator] ?? "—")}
             </div>
           </div>
         )}
-        {clickedTract && (
-          <div
-            className="absolute z-20 rounded bg-white px-4 py-3 text-sm shadow-lg border border-slate-200 min-w-[200px]"
-            style={{ left: clickedTract.x + 10, top: clickedTract.y }}
-          >
-            <div className="font-medium text-slate-800">
-              {clickedTract.props.CNTY_NAME}
-            </div>
-            <div className="mt-1 text-slate-600">
-              Tract {String(clickedTract.props.ID)}
-            </div>
-            <div className="mt-2 pt-2 border-t border-slate-100">
-              <Link
-                href={`/tract/${geoid11(clickedTract.props.ID)}`}
-                className="inline-block rounded bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700"
+        {clickedTract &&
+          (() => {
+            const state = clickedTract.props.ST_ABBREV;
+            const geoid = geoid11(clickedTract.props.ID);
+            const tractShap = shapByState[state]?.[geoid];
+            return (
+              <div
+                className="absolute z-20 rounded bg-white px-4 py-3 text-sm shadow-lg border border-slate-200 min-w-[240px] max-w-[320px]"
+                style={{ left: clickedTract.x + 10, top: clickedTract.y }}
               >
-                View full details →
-              </Link>
-            </div>
-            <button
-              type="button"
-              onClick={() => setClickedTract(null)}
-              className="mt-2 block w-full text-left text-xs text-slate-500 hover:text-slate-700"
-            >
-              Close
-            </button>
-          </div>
-        )}
+                <div className="font-medium text-slate-800">
+                  {clickedTract.props.CNTY_NAME}
+                </div>
+                <div className="mt-1 text-slate-600">
+                  Tract {String(clickedTract.props.ID)}
+                </div>
+                {tractShap && (
+                  <div className="mt-2 pt-2 border-t border-slate-100 space-y-2">
+                    <div>
+                      <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">
+                        Top drivers — cancer risk
+                      </div>
+                      <ul className="mt-0.5 text-xs text-slate-700 space-y-0.5">
+                        {tractShap.cancer
+                          .filter(({ shap }) => shap > 0)
+                          .map(({ feature }, i) => (
+                            <li key={i} className="text-red-600">
+                              {getShapFeatureLabel(feature)} increases risk
+                            </li>
+                          ))}
+                        {tractShap.cancer.every(({ shap }) => shap <= 0) && (
+                          <li className="text-slate-500">
+                            None of the top factors increase risk in this tract.
+                          </li>
+                        )}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">
+                        Top drivers — respiratory risk
+                      </div>
+                      <ul className="mt-0.5 text-xs text-slate-700 space-y-0.5">
+                        {tractShap.resp
+                          .filter(({ shap }) => shap > 0)
+                          .map(({ feature }, i) => (
+                            <li key={i} className="text-red-600">
+                              {getShapFeatureLabel(feature)} increases risk
+                            </li>
+                          ))}
+                        {tractShap.resp.every(({ shap }) => shap <= 0) && (
+                          <li className="text-slate-500">
+                            None of the top factors increase risk in this tract.
+                          </li>
+                        )}
+                      </ul>
+                    </div>
+                  </div>
+                )}
+                {!tractShap && shapByState[state] !== undefined && (
+                  <div className="mt-2 pt-2 border-t border-slate-100 text-xs text-slate-500">
+                    Driver data not available for this tract.
+                  </div>
+                )}
+                {!tractShap && shapByState[state] === undefined && (
+                  <div className="mt-2 pt-2 border-t border-slate-100 text-xs text-slate-500">
+                    Loading driver data…
+                  </div>
+                )}
+                <div className="mt-2 pt-2 border-t border-slate-100">
+                  <Link
+                    href={`/tract/${geoid11(clickedTract.props.ID)}`}
+                    className="inline-block rounded bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700"
+                  >
+                    View full details →
+                  </Link>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setClickedTract(null)}
+                  className="mt-2 block w-full text-left text-xs text-slate-500 hover:text-slate-700"
+                >
+                  Close
+                </button>
+              </div>
+            );
+          })()}
       </div>
     </div>
   );

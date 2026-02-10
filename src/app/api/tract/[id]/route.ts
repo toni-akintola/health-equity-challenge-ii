@@ -3,7 +3,7 @@ import { getTractById } from "@/src/lib/tract-data";
 
 export async function GET(
   _request: Request,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params;
   if (!id) {
@@ -14,7 +14,7 @@ export async function GET(
   if (!tract) {
     return NextResponse.json(
       { error: "Tract not found. Run export script if data is missing." },
-      { status: 404 }
+      { status: 404 },
     );
   }
 

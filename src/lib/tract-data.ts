@@ -14,14 +14,20 @@ async function getStateFipsMap(): Promise<Record<string, string>> {
   if (stateFipsMap) return stateFipsMap;
   const raw = await fs.readFile(
     path.join(GEOJSON_DIR, "state-fips.json"),
-    "utf-8"
+    "utf-8",
   );
   stateFipsMap = JSON.parse(raw) as Record<string, string>;
   return stateFipsMap;
 }
 
-type GeoJSONFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, unknown>>;
-type GeoJSONFC = GeoJSON.FeatureCollection<GeoJSON.Geometry, Record<string, unknown>>;
+type GeoJSONFeature = GeoJSON.Feature<
+  GeoJSON.Geometry,
+  Record<string, unknown>
+>;
+type GeoJSONFC = GeoJSON.FeatureCollection<
+  GeoJSON.Geometry,
+  Record<string, unknown>
+>;
 
 export type TractRecord = Record<string, unknown>;
 
@@ -36,7 +42,7 @@ export async function getTractById(id: string): Promise<TractRecord | null> {
   try {
     const raw = await fs.readFile(
       path.join(GEOJSON_DIR, `${stateAbbrev}.geojson`),
-      "utf-8"
+      "utf-8",
     );
     fc = JSON.parse(raw) as GeoJSONFC;
   } catch {
@@ -45,7 +51,7 @@ export async function getTractById(id: string): Promise<TractRecord | null> {
 
   const geoidNum = Number(geoid);
   const feature = fc.features?.find(
-    (f: GeoJSONFeature) => f.properties?.ID === geoidNum
+    (f: GeoJSONFeature) => f.properties?.ID === geoidNum,
   );
   return feature?.properties ?? null;
 }

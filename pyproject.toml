@@ -11,4 +11,6 @@ dependencies = [
     "pandas>=2.3.3",
     "plotly>=6.5.2",
     "pygris>=0.2.1",
+    "scikit-learn>=1.5.0",
+    "shap>=0.46.0",
 ]

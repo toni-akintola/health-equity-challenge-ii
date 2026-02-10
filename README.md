@@ -31,11 +31,11 @@ Open [http://localhost:3000](http://localhost:3000). Use the sidebar to pick sta
 
 ## Scripts
 
-| Command | Description |
-|--------|-------------|
-| `npm run dev` | Start Next.js dev server |
-| `npm run build` | Production build |
-| `npm run start` | Run production server |
+| Command                  | Description                          |
+| ------------------------ | ------------------------------------ |
+| `npm run dev`            | Start Next.js dev server             |
+| `npm run build`          | Production build                     |
+| `npm run start`          | Run production server                |
 | `npm run export-geojson` | Run the Python GeoJSON export script |
 
 ## Legacy Dash app

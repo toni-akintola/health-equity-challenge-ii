@@ -1,0 +1,2690 @@
+{
+  "46005956600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.142194420155138 },
+      { "feature": "DEMOGIDX_2", "shap": -5.327611206024885 },
+      { "feature": "P_UST", "shap": 5.156969586359337 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.768004912605974 },
+      { "feature": "P_UST", "shap": 5.374291781280189 },
+      { "feature": "DEMOGIDX_2", "shap": -4.188367023766041 }
+    ]
+  },
+  "46005956700": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.966224695965647 },
+      { "feature": "P_PM25", "shap": -4.063448134316132 },
+      { "feature": "DEMOGIDX_2", "shap": -2.6165747658815235 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.897640416717623 },
+      { "feature": "DEMOGIDX_2", "shap": -3.719048274997622 },
+      { "feature": "P_PM25", "shap": -3.5060660245700275 }
+    ]
+  },
+  "46005956800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -2.225809284131974 },
+      { "feature": "P_PNPL", "shap": -1.879951529437676 },
+      { "feature": "P_PTSDF", "shap": -1.58419088518247 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -5.614977957804221 },
+      { "feature": "P_PNPL", "shap": -2.7065914988191797 },
+      { "feature": "P_PM25", "shap": -1.620545620340854 }
+    ]
+  },
+  "46005956900": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 3.955125841200352 },
+      { "feature": "P_PNPL", "shap": -2.401545352032408 },
+      { "feature": "P_OZONE", "shap": 2.0653753721877 }
+    ],
+    "resp": [
+      { "feature": "P_PNPL", "shap": -2.5835736473230644 },
+      { "feature": "P_DSLPM", "shap": 2.5163075779704376 },
+      { "feature": "DEMOGIDX_2", "shap": 1.833520024139434 }
+    ]
+  },
+  "46005957000": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -2.599529483187944 },
+      { "feature": "P_PNPL", "shap": -2.0693561493698507 },
+      { "feature": "P_PTSDF", "shap": -1.1118167823180556 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -3.8955830146581865 },
+      { "feature": "P_PNPL", "shap": -2.6793641964765267 },
+      { "feature": "P_PM25", "shap": -1.0323888866230846 }
+    ]
+  },
+  "46005957100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -2.399075607517734 },
+      { "feature": "P_PM25", "shap": -2.2973867589887234 },
+      { "feature": "P_PNPL", "shap": -2.0478525891620665 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -6.009442815540824 },
+      { "feature": "P_PNPL", "shap": -2.3398914927104486 },
+      { "feature": "P_PM25", "shap": -1.5915694193542003 }
+    ]
+  },
+  "46009967600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -5.733994007073343 },
+      { "feature": "DEMOGIDX_2", "shap": -2.269640146867605 },
+      { "feature": "P_PWDIS", "shap": -1.2815740700252354 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.81494807922747 },
+      { "feature": "DEMOGIDX_2", "shap": -1.9154470906499774 },
+      { "feature": "P_PM25", "shap": 1.0918146944511682 }
+    ]
+  },
+  "46009967700": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.556928713358939 },
+      { "feature": "P_PTRAF", "shap": 1.321685455897823 },
+      { "feature": "P_OZONE", "shap": 1.1067071792390197 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.1334866520809 },
+      { "feature": "P_PM25", "shap": -2.475754425749183 },
+      { "feature": "P_PNPL", "shap": 0.7179667829396204 }
+    ]
+  },
+  "46011958600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -3.312870852109045 },
+      { "feature": "DEMOGIDX_2", "shap": -3.181821658797562 },
+      { "feature": "P_OZONE", "shap": 1.674991541346535 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -6.856584406988695 },
+      { "feature": "DEMOGIDX_2", "shap": -2.778804177297279 },
+      { "feature": "P_PM25", "shap": -1.595927664982155 }
+    ]
+  },
+  "46011958700": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -3.953790588732809 },
+      { "feature": "P_DSLPM", "shap": -3.1602020638994874 },
+      { "feature": "P_PM25", "shap": -1.5322453723684886 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -6.7477103877021 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1270955724082885 },
+      { "feature": "P_OZONE", "shap": 1.5532935503777117 }
+    ]
+  },
+  "46011958803": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": 3.006106863315217 },
+      { "feature": "P_DSLPM", "shap": 2.6431433548405767 },
+      { "feature": "P_PM25", "shap": -2.1569638343248516 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -1.8170036290958524 },
+      { "feature": "P_PM25", "shap": -1.2384173650480808 },
+      { "feature": "P_PNPL", "shap": -1.062497177310288 }
+    ]
+  },
+  "46011958804": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 3.5402860786765813 },
+      { "feature": "P_OZONE", "shap": 2.8741514185257255 },
+      { "feature": "P_PM25", "shap": -2.224957756951917 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -4.9130495093483475 },
+      { "feature": "P_DSLPM", "shap": 3.597314422214404 },
+      { "feature": "P_OZONE", "shap": 1.4592860074876808 }
+    ]
+  },
+  "46011958805": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 3.548134278692305 },
+      { "feature": "P_OZONE", "shap": 3.438833812251687 },
+      { "feature": "P_PM25", "shap": -2.1539274294883946 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -4.927753651421517 },
+      { "feature": "P_DSLPM", "shap": 3.5251745719555765 },
+      { "feature": "P_OZONE", "shap": 1.2805414411029779 }
+    ]
+  },
+  "46011958900": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 4.807950545325875 },
+      { "feature": "P_OZONE", "shap": 2.997783621260896 },
+      { "feature": "P_PWDIS", "shap": 1.667261820808053 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 10.58141505212523 },
+      { "feature": "P_PM25", "shap": -3.0760848806484136 },
+      { "feature": "P_PWDIS", "shap": 1.7512319942563772 }
+    ]
+  },
+  "46011959000": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.419793193563819 },
+      { "feature": "P_OZONE", "shap": 2.7196173157310115 },
+      { "feature": "P_PM25", "shap": -2.1709895118372513 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 8.454916051169857 },
+      { "feature": "DEMOGIDX_2", "shap": -1.5946264177560807 },
+      { "feature": "P_LDPNT", "shap": -1.2771042230166494 }
+    ]
+  },
+  "46013951300": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 10.795247848909348 },
+      { "feature": "P_OZONE", "shap": 2.540665288688615 },
+      { "feature": "DEMOGIDX_2", "shap": -2.500505884741433 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -6.6344242117763494 },
+      { "feature": "P_PM25", "shap": 5.282233914993704 },
+      { "feature": "DEMOGIDX_2", "shap": -4.040727600015234 }
+    ]
+  },
+  "46013951400": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 11.49729512039572 },
+      { "feature": "P_DSLPM", "shap": -4.553405173784122 },
+      { "feature": "P_OZONE", "shap": 3.3753049005009235 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.290583138326183 },
+      { "feature": "P_DSLPM", "shap": -6.128271594319958 },
+      { "feature": "DEMOGIDX_2", "shap": -3.6576879009301773 }
+    ]
+  },
+  "46013951500": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.17460262335837 },
+      { "feature": "P_OZONE", "shap": 5.435263221457135 },
+      { "feature": "P_DSLPM", "shap": 4.641295474190265 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.595894627873786 },
+      { "feature": "P_DSLPM", "shap": 4.543288091251161 },
+      { "feature": "P_PTRAF", "shap": 3.715791960153729 }
+    ]
+  },
+  "46013951600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 10.160202543418855 },
+      { "feature": "P_DSLPM", "shap": 3.570652494719252 },
+      { "feature": "P_OZONE", "shap": 3.146882989422884 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.936275365529582 },
+      { "feature": "P_DSLPM", "shap": 4.871379045967478 },
+      { "feature": "P_PNPL", "shap": -2.953899928224273 }
+    ]
+  },
+  "46013951700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 9.809127686731518 },
+      { "feature": "P_OZONE", "shap": 2.705830299537629 },
+      { "feature": "P_PWDIS", "shap": 1.2843507604114712 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 5.968955180831253 },
+      { "feature": "P_DSLPM", "shap": -5.809489284352167 },
+      { "feature": "P_PNPL", "shap": -2.7887986206123605 }
+    ]
+  },
+  "46013951800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.799793140143157 },
+      { "feature": "P_PTSDF", "shap": 3.4875050962436944 },
+      { "feature": "P_OZONE", "shap": 3.1940609437227248 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.138426572750323 },
+      { "feature": "P_DSLPM", "shap": -5.641230994176585 },
+      { "feature": "P_PNPL", "shap": -2.460218682740815 }
+    ]
+  },
+  "46013951900": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 8.560455359080807 },
+      { "feature": "P_DSLPM", "shap": -7.666002189349383 },
+      { "feature": "DEMOGIDX_2", "shap": -6.767192721003666 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.812399008937646 },
+      { "feature": "DEMOGIDX_2", "shap": -5.176249812373426 },
+      { "feature": "P_PM25", "shap": 4.4814381706016135 }
+    ]
+  },
+  "46013952000": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 9.63833471186459 },
+      { "feature": "P_DSLPM", "shap": -8.305084958095103 },
+      { "feature": "DEMOGIDX_2", "shap": -4.54341022326611 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -15.845074092217255 },
+      { "feature": "DEMOGIDX_2", "shap": -4.922798765671905 },
+      { "feature": "P_PM25", "shap": 4.653610102543607 }
+    ]
+  },
+  "46015973100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.599519096566365 },
+      { "feature": "P_DSLPM", "shap": -7.370349305849523 },
+      { "feature": "P_OZONE", "shap": -3.552389425372239 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.009762048092671 },
+      { "feature": "P_PM25", "shap": -8.012327427249401 },
+      { "feature": "P_OZONE", "shap": -2.477798651152989 }
+    ]
+  },
+  "46015973200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.516144696958363 },
+      { "feature": "P_OZONE", "shap": -3.9522905185981654 },
+      { "feature": "P_DSLPM", "shap": -3.7913878991082313 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.562536823833362 },
+      { "feature": "P_DSLPM", "shap": -5.659704341054894 },
+      { "feature": "P_OZONE", "shap": -2.0757123645290267 }
+    ]
+  },
+  "46017940200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.942766427639873 },
+      { "feature": "P_DSLPM", "shap": -7.446116132801398 },
+      { "feature": "P_OZONE", "shap": -1.9784052983298899 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.907208270435222 },
+      { "feature": "P_PM25", "shap": -10.36688438686193 },
+      { "feature": "P_PNPL", "shap": -1.4414444792922587 }
+    ]
+  },
+  "46019967600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.256347800325603 },
+      { "feature": "P_PM25", "shap": -8.710931209246628 },
+      { "feature": "P_OZONE", "shap": -4.5420216672960665 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -13.824437020877376 },
+      { "feature": "P_DSLPM", "shap": -9.69409494544845 },
+      { "feature": "P_OZONE", "shap": -2.9371493293053934 }
+    ]
+  },
+  "46019967701": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -11.074591264119372 },
+      { "feature": "P_DSLPM", "shap": -7.3226061300933365 },
+      { "feature": "P_OZONE", "shap": -3.352436667829752 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.730921430010348 },
+      { "feature": "P_DSLPM", "shap": -11.653908410086297 },
+      { "feature": "P_OZONE", "shap": -1.7805705587507692 }
+    ]
+  },
+  "46019967702": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -11.09933473570738 },
+      { "feature": "P_DSLPM", "shap": -6.8551005003042516 },
+      { "feature": "P_OZONE", "shap": -3.4513587851636114 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.71063067051582 },
+      { "feature": "P_DSLPM", "shap": -11.419740837686696 },
+      { "feature": "P_OZONE", "shap": -1.7272302305523772 }
+    ]
+  },
+  "46021964100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.124758071638643 },
+      { "feature": "P_DSLPM", "shap": -8.909759624507279 },
+      { "feature": "DEMOGIDX_2", "shap": -1.2911133738141507 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.647391436446924 },
+      { "feature": "P_PM25", "shap": -8.345341663146392 },
+      { "feature": "P_PNPL", "shap": -2.8843218503240498 }
+    ]
+  },
+  "46023940200": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.052716635614633 },
+      { "feature": "P_PM25", "shap": -5.808945815549232 },
+      { "feature": "P_OZONE", "shap": -3.7648117726971395 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.260561497937887 },
+      { "feature": "P_PM25", "shap": -5.303258615257218 },
+      { "feature": "DEMOGIDX_2", "shap": 2.6370575771294535 }
+    ]
+  },
+  "46023940300": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.951460325829685 },
+      { "feature": "P_PM25", "shap": -1.923869844567962 },
+      { "feature": "DEMOGIDX_2", "shap": 1.7901232117810286 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -14.586492619263009 },
+      { "feature": "DEMOGIDX_2", "shap": 2.1569014114886524 },
+      { "feature": "P_PM25", "shap": -1.4360770635679365 }
+    ]
+  },
+  "46023970100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.613076490275562 },
+      { "feature": "P_PM25", "shap": -6.174914710046724 },
+      { "feature": "P_OZONE", "shap": -2.5277301881765015 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.49550020152703 },
+      { "feature": "P_PM25", "shap": -7.118124042010168 },
+      { "feature": "DEMOGIDX_2", "shap": -1.6163035068952012 }
+    ]
+  },
+  "46025955800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 9.477243904862553 },
+      { "feature": "P_DSLPM", "shap": -6.478919935962185 },
+      { "feature": "P_OZONE", "shap": 4.339554648359772 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.470780216653365 },
+      { "feature": "P_PM25", "shap": 5.4519756877061445 },
+      { "feature": "P_PWDIS", "shap": -2.906718180333264 }
+    ]
+  },
+  "46027965700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 13.681805394240655 },
+      { "feature": "P_OZONE", "shap": 3.2920437719486655 },
+      { "feature": "P_DSLPM", "shap": 2.2769534381013363 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.73661426242441 },
+      { "feature": "P_DSLPM", "shap": -3.8850729678897187 },
+      { "feature": "DEMOGIDX_2", "shap": -1.4518215548165607 }
+    ]
+  },
+  "46027965800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 11.244193786964752 },
+      { "feature": "DEMOGIDX_2", "shap": -3.13516394559294 },
+      { "feature": "P_OZONE", "shap": 2.759941424373537 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.576719249729067 },
+      { "feature": "P_DSLPM", "shap": -5.55560432524886 },
+      { "feature": "DEMOGIDX_2", "shap": -3.747687407170888 }
+    ]
+  },
+  "46027965900": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 13.275488084536045 },
+      { "feature": "P_OZONE", "shap": 4.226310756001621 },
+      { "feature": "P_DSLPM", "shap": 4.175639779958874 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 9.047437533596531 },
+      { "feature": "P_DSLPM", "shap": 2.9356048282189295 },
+      { "feature": "P_PNPL", "shap": 1.0026626081531866 }
+    ]
+  },
+  "46029954100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.208946752827615 },
+      { "feature": "P_DSLPM", "shap": -6.063473754925654 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1028669344820083 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -9.785752289819065 },
+      { "feature": "P_PM25", "shap": 7.701334148542956 },
+      { "feature": "DEMOGIDX_2", "shap": -3.610688910649624 }
+    ]
+  },
+  "46029954301": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 14.440275738742203 },
+      { "feature": "P_DSLPM", "shap": 5.416974449148402 },
+      { "feature": "P_PTSDF", "shap": 4.3901527895312755 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.320220482787118 },
+      { "feature": "P_DSLPM", "shap": 3.6661120365397073 },
+      { "feature": "DEMOGIDX_2", "shap": -1.6827969614544418 }
+    ]
+  },
+  "46029954302": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 20.202678231988102 },
+      { "feature": "P_DSLPM", "shap": 5.210134415673092 },
+      { "feature": "P_OZONE", "shap": 4.253011220796034 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.747865780713036 },
+      { "feature": "DEMOGIDX_2", "shap": -4.1352077854133675 },
+      { "feature": "P_DSLPM", "shap": -1.959805432560388 }
+    ]
+  },
+  "46029954401": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 15.349979933425784 },
+      { "feature": "P_DSLPM", "shap": 5.172197908787057 },
+      { "feature": "P_PTSDF", "shap": 4.402583411866799 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.481245435420425 },
+      { "feature": "P_DSLPM", "shap": 5.376291727332864 },
+      { "feature": "P_PNPL", "shap": -0.9411031686002389 }
+    ]
+  },
+  "46029954402": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 15.99601591527462 },
+      { "feature": "P_DSLPM", "shap": 5.829510471466929 },
+      { "feature": "P_PTSDF", "shap": 3.56085583162494 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.348880370124244 },
+      { "feature": "P_DSLPM", "shap": 5.720444256879855 },
+      { "feature": "DEMOGIDX_2", "shap": -1.8960423858033026 }
+    ]
+  },
+  "46029954501": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 11.714021871807054 },
+      { "feature": "P_LDPNT", "shap": -3.639316259473562 },
+      { "feature": "P_DSLPM", "shap": 3.1671767874760555 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.570400037551298 },
+      { "feature": "P_DSLPM", "shap": -3.9106668486841953 },
+      { "feature": "P_PNPL", "shap": -2.0403102312865666 }
+    ]
+  },
+  "46029954502": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 16.76126325024292 },
+      { "feature": "P_OZONE", "shap": 3.980113330362365 },
+      { "feature": "P_DSLPM", "shap": 3.9122411033976823 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.087248090999201 },
+      { "feature": "P_DSLPM", "shap": -3.7862451475230046 },
+      { "feature": "DEMOGIDX_2", "shap": -3.049877250021091 }
+    ]
+  },
+  "46029954600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 13.978980904836208 },
+      { "feature": "P_DSLPM", "shap": -6.619765613814816 },
+      { "feature": "P_OZONE", "shap": 4.184859775584191 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.587838903081138 },
+      { "feature": "P_PM25", "shap": 8.654967115536564 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1139781249105 }
+    ]
+  },
+  "46031941000": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.960117837828584 },
+      { "feature": "P_DSLPM", "shap": -8.354946633707732 },
+      { "feature": "P_OZONE", "shap": -5.91944483326748 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.105068037230522 },
+      { "feature": "P_PM25", "shap": -10.493339911453658 },
+      { "feature": "P_OZONE", "shap": -4.343735920706531 }
+    ]
+  },
+  "46031941100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.553622402283363 },
+      { "feature": "P_DSLPM", "shap": -8.721269481051714 },
+      { "feature": "P_OZONE", "shap": -2.018840367058292 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -14.814073646487667 },
+      { "feature": "P_PM25", "shap": -10.416037855464966 },
+      { "feature": "P_PNPL", "shap": -1.334241212271154 }
+    ]
+  },
+  "46033965100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -15.825331666204146 },
+      { "feature": "P_DSLPM", "shap": -7.986988021694124 },
+      { "feature": "DEMOGIDX_2", "shap": -1.1548538491874933 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -17.05913850952871 },
+      { "feature": "P_DSLPM", "shap": -11.330838054650231 },
+      { "feature": "DEMOGIDX_2", "shap": -0.9213794716412668 }
+    ]
+  },
+  "46033965200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -14.999702033610083 },
+      { "feature": "P_DSLPM", "shap": -7.832492872923613 },
+      { "feature": "P_PWDIS", "shap": -2.1301506734080613 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -17.108589322092012 },
+      { "feature": "P_DSLPM", "shap": -11.3139322051825 },
+      { "feature": "P_PWDIS", "shap": -1.1035965710412712 }
+    ]
+  },
+  "46035962600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.37916647747159 },
+      { "feature": "DEMOGIDX_2", "shap": -3.529462632490322 },
+      { "feature": "P_PM25", "shap": -3.1020898825023324 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.911450491477735 },
+      { "feature": "DEMOGIDX_2", "shap": -3.813358684182167 },
+      { "feature": "P_PM25", "shap": -3.387511331407586 }
+    ]
+  },
+  "46035962700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -2.8544960473384706 },
+      { "feature": "DEMOGIDX_2", "shap": -1.9419429140910507 },
+      { "feature": "P_PNPL", "shap": -1.286999358944595 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -2.51657990234904 },
+      { "feature": "DEMOGIDX_2", "shap": -1.6024125526100397 },
+      { "feature": "P_UST", "shap": -0.9328350534848869 }
+    ]
+  },
+  "46035962801": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 4.466139181610197 },
+      { "feature": "P_PM25", "shap": -2.8002038135379554 },
+      { "feature": "P_OZONE", "shap": 2.174336838275194 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 9.389096080046148 },
+      { "feature": "P_OZONE", "shap": 1.3267581398808397 },
+      { "feature": "P_PWDIS", "shap": -0.9152169998874888 }
+    ]
+  },
+  "46035962802": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.49669124064967 },
+      { "feature": "P_PM25", "shap": -2.642136965878308 },
+      { "feature": "DEMOGIDX_2", "shap": -2.1705022592749446 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 10.112846556799486 },
+      { "feature": "DEMOGIDX_2", "shap": -2.564838971309364 },
+      { "feature": "P_OZONE", "shap": 1.1447810988803395 }
+    ]
+  },
+  "46035962900": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 4.894542544009164 },
+      { "feature": "P_PM25", "shap": -2.147955432124436 },
+      { "feature": "P_PNPL", "shap": -1.5900646989606322 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 5.050828510532155 },
+      { "feature": "DEMOGIDX_2", "shap": -1.251554947849363 },
+      { "feature": "P_OZONE", "shap": 0.8026600435771979 }
+    ]
+  },
+  "46039953600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.172147465469315 },
+      { "feature": "P_DSLPM", "shap": -4.45397006620653 },
+      { "feature": "DEMOGIDX_2", "shap": -3.9038219129666687 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.626971948808059 },
+      { "feature": "P_PM25", "shap": 5.774760991173098 },
+      { "feature": "DEMOGIDX_2", "shap": -4.099600561109837 }
+    ]
+  },
+  "46039953700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.4633762045111505 },
+      { "feature": "P_DSLPM", "shap": -4.718461558977142 },
+      { "feature": "DEMOGIDX_2", "shap": -2.5053587811999023 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.401536005381494 },
+      { "feature": "P_PM25", "shap": 6.312131822124356 },
+      { "feature": "DEMOGIDX_2", "shap": -1.776133687903639 }
+    ]
+  },
+  "46041941700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.908768364707939 },
+      { "feature": "P_DSLPM", "shap": -8.534716206211597 },
+      { "feature": "P_OZONE", "shap": -3.9818111041397786 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -14.028975863518426 },
+      { "feature": "P_DSLPM", "shap": -11.667663194220513 },
+      { "feature": "DEMOGIDX_2", "shap": 1.6507646531565114 }
+    ]
+  },
+  "46043969600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.371327787451446 },
+      { "feature": "P_PM25", "shap": -5.993409137125127 },
+      { "feature": "DEMOGIDX_2", "shap": -2.2337309934571383 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.214206756767817 },
+      { "feature": "P_PM25", "shap": -5.103404967855895 },
+      { "feature": "DEMOGIDX_2", "shap": -3.3974526777304708 }
+    ]
+  },
+  "46045962100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.988729066159576 },
+      { "feature": "DEMOGIDX_2", "shap": -3.8588203252386304 },
+      { "feature": "P_PM25", "shap": -2.7333241345267743 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -16.256441869067494 },
+      { "feature": "DEMOGIDX_2", "shap": -4.374522888837382 },
+      { "feature": "P_PM25", "shap": -2.2696531225333456 }
+    ]
+  },
+  "46047964100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -15.3183073562989 },
+      { "feature": "P_DSLPM", "shap": -5.477915462236852 },
+      { "feature": "P_OZONE", "shap": -2.4119694575108586 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -15.338751526437699 },
+      { "feature": "P_DSLPM", "shap": -10.879042396699079 },
+      { "feature": "P_OZONE", "shap": -0.7369298701582011 }
+    ]
+  },
+  "46047964200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -16.268356447066182 },
+      { "feature": "P_DSLPM", "shap": -5.119120192974806 },
+      { "feature": "P_OZONE", "shap": -2.743206596162636 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -16.142854518732054 },
+      { "feature": "P_DSLPM", "shap": -10.476781725124455 },
+      { "feature": "P_UST", "shap": -0.6391682596481405 }
+    ]
+  },
+  "46049961100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.233680698378012 },
+      { "feature": "P_DSLPM", "shap": -6.462174636684358 },
+      { "feature": "DEMOGIDX_2", "shap": -2.727093718787655 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.28065640168963 },
+      { "feature": "P_PM25", "shap": -4.634777449766407 },
+      { "feature": "DEMOGIDX_2", "shap": -3.214238295247778 }
+    ]
+  },
+  "46051953100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.039173615039326 },
+      { "feature": "P_DSLPM", "shap": -4.317778434799984 },
+      { "feature": "P_OZONE", "shap": 2.914122648788616 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.263459322741255 },
+      { "feature": "P_DSLPM", "shap": -6.340323119047098 },
+      { "feature": "DEMOGIDX_2", "shap": -2.854632723040413 }
+    ]
+  },
+  "46051953300": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.16409149615094 },
+      { "feature": "P_DSLPM", "shap": -5.693602072289213 },
+      { "feature": "DEMOGIDX_2", "shap": -4.545605011638254 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.604545976254158 },
+      { "feature": "P_PM25", "shap": 7.542154199430952 },
+      { "feature": "DEMOGIDX_2", "shap": -4.390865255508106 }
+    ]
+  },
+  "46053971100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.993697181325405 },
+      { "feature": "P_DSLPM", "shap": -6.713796621132642 },
+      { "feature": "P_PWDIS", "shap": -2.2371041900664568 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.767605806312059 },
+      { "feature": "P_PM25", "shap": -9.772707447406138 },
+      { "feature": "P_PNPL", "shap": -1.3485146055743098 }
+    ]
+  },
+  "46053971200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.047276503350586 },
+      { "feature": "P_DSLPM", "shap": -7.307975861486048 },
+      { "feature": "P_OZONE", "shap": -2.191103473699186 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.200293807880954 },
+      { "feature": "P_PM25", "shap": -8.385257865913445 },
+      { "feature": "P_PWDIS", "shap": -1.4022330118576065 }
+    ]
+  },
+  "46055960100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -11.594635416748934 },
+      { "feature": "P_DSLPM", "shap": -7.496506337560714 },
+      { "feature": "P_OZONE", "shap": -3.6290319923311474 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.736259972085245 },
+      { "feature": "P_PM25", "shap": -12.360463000470773 },
+      { "feature": "P_OZONE", "shap": -2.5486101389117537 }
+    ]
+  },
+  "46057955100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.063174155568704 },
+      { "feature": "P_DSLPM", "shap": -5.336277612270788 },
+      { "feature": "DEMOGIDX_2", "shap": -2.568646203391254 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.303333191163837 },
+      { "feature": "P_PM25", "shap": 6.204542628834024 },
+      { "feature": "DEMOGIDX_2", "shap": -1.9382405980839394 }
+    ]
+  },
+  "46057955200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.801382426088676 },
+      { "feature": "P_DSLPM", "shap": -6.467060301909223 },
+      { "feature": "DEMOGIDX_2", "shap": -2.8173863729462028 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.051350693132262 },
+      { "feature": "P_PM25", "shap": 5.804827739183093 },
+      { "feature": "DEMOGIDX_2", "shap": -1.8549979133694432 }
+    ]
+  },
+  "46059975600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.493458566702902 },
+      { "feature": "P_DSLPM", "shap": -6.86866761052981 },
+      { "feature": "P_PWDIS", "shap": -2.379461834784597 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.600977884926833 },
+      { "feature": "P_PM25", "shap": -8.119353769832523 },
+      { "feature": "P_PNPL", "shap": -2.141440551104024 }
+    ]
+  },
+  "46061964100": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.162360902372748 },
+      { "feature": "P_DSLPM", "shap": -3.6406296645104885 },
+      { "feature": "P_PM25", "shap": -1.9409539910731837 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -7.9821785526862366 },
+      { "feature": "DEMOGIDX_2", "shap": -3.741362946033478 },
+      { "feature": "P_PM25", "shap": -1.7477386644261423 }
+    ]
+  },
+  "46065977700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.887592840315774 },
+      { "feature": "P_OZONE", "shap": -4.719101389718707 },
+      { "feature": "P_DSLPM", "shap": -2.623737681750208 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -13.20784464317374 },
+      { "feature": "P_DSLPM", "shap": -4.754264427646994 },
+      { "feature": "P_PNPL", "shap": -2.2832945337053387 }
+    ]
+  },
+  "46065977800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.246246835254134 },
+      { "feature": "P_DSLPM", "shap": -5.877749462183565 },
+      { "feature": "P_OZONE", "shap": -3.5398449214524588 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.51724305604468 },
+      { "feature": "P_PM25", "shap": -11.38492203399539 },
+      { "feature": "P_PNPL", "shap": -1.8461295200604946 }
+    ]
+  },
+  "46065977900": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.013677571257576 },
+      { "feature": "P_OZONE", "shap": -4.405097722986247 },
+      { "feature": "P_DSLPM", "shap": -3.6877106317691504 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.282612207345665 },
+      { "feature": "P_DSLPM", "shap": -9.142646302692592 },
+      { "feature": "P_PNPL", "shap": -2.2153891516849398 }
+    ]
+  },
+  "46065978000": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.096663702642545 },
+      { "feature": "P_DSLPM", "shap": -5.743057323433459 },
+      { "feature": "P_OZONE", "shap": -3.278650255132234 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -11.359864778077462 },
+      { "feature": "P_DSLPM", "shap": -11.268367903763428 },
+      { "feature": "P_PNPL", "shap": -1.9884571320563555 }
+    ]
+  },
+  "46067968600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.23181637249887 },
+      { "feature": "DEMOGIDX_2", "shap": -1.6952970754168928 },
+      { "feature": "P_OZONE", "shap": 1.6516638385318219 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.74520057622809 },
+      { "feature": "P_PM25", "shap": -2.1900245869345962 },
+      { "feature": "DEMOGIDX_2", "shap": -1.6491308567859233 }
+    ]
+  },
+  "46067968700": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -5.951057298816741 },
+      { "feature": "DEMOGIDX_2", "shap": -3.323744692755863 },
+      { "feature": "P_PM25", "shap": -2.4513928541215138 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.931599807688036 },
+      { "feature": "DEMOGIDX_2", "shap": -3.4706131664291022 },
+      { "feature": "P_PM25", "shap": -2.187437372119166 }
+    ]
+  },
+  "46067968800": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -5.999980054609478 },
+      { "feature": "DEMOGIDX_2", "shap": -4.242570269433782 },
+      { "feature": "P_PM25", "shap": -1.7431681622145698 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.559935707491823 },
+      { "feature": "DEMOGIDX_2", "shap": -3.7726750873960553 },
+      { "feature": "P_PM25", "shap": -1.8005740220844746 }
+    ]
+  },
+  "46069976700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.500433111255989 },
+      { "feature": "P_DSLPM", "shap": -7.527088462430984 },
+      { "feature": "P_PWDIS", "shap": -2.4468389734718947 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.266235267757438 },
+      { "feature": "P_PM25", "shap": -9.79727133257431 },
+      { "feature": "DEMOGIDX_2", "shap": -2.447895150753902 }
+    ]
+  },
+  "46071961100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.68058317832183 },
+      { "feature": "P_DSLPM", "shap": -6.5849583612009885 },
+      { "feature": "P_OZONE", "shap": -4.408817027803743 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.579332118970342 },
+      { "feature": "P_PM25", "shap": -12.170345076336526 },
+      { "feature": "P_OZONE", "shap": -2.025143710486591 }
+    ]
+  },
+  "46073974100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.794754022788257 },
+      { "feature": "P_PM25", "shap": -7.507715677451342 },
+      { "feature": "DEMOGIDX_2", "shap": -2.157598468651995 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.620514297939371 },
+      { "feature": "P_PM25", "shap": -6.51046387160779 },
+      { "feature": "DEMOGIDX_2", "shap": -3.198560758262174 }
+    ]
+  },
+  "46075091600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.6465021853894 },
+      { "feature": "P_DSLPM", "shap": -6.618004679754376 },
+      { "feature": "P_OZONE", "shap": -3.7203419483138713 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -13.08245714683202 },
+      { "feature": "P_DSLPM", "shap": -11.954379778746516 },
+      { "feature": "P_OZONE", "shap": -1.9198536535771564 }
+    ]
+  },
+  "46077958100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -8.039148047156631 },
+      { "feature": "DEMOGIDX_2", "shap": -4.481453318400309 },
+      { "feature": "P_PM25", "shap": -1.9193565184809267 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.530230462900363 },
+      { "feature": "DEMOGIDX_2", "shap": -3.6779640658199786 },
+      { "feature": "P_PM25", "shap": -1.9697042687016073 }
+    ]
+  },
+  "46077958200": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.876173106096685 },
+      { "feature": "DEMOGIDX_2", "shap": -4.541511432258412 },
+      { "feature": "P_PM25", "shap": -2.1755274839140473 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.822970174034126 },
+      { "feature": "DEMOGIDX_2", "shap": -3.825108562987298 },
+      { "feature": "P_PM25", "shap": -2.5576298333669545 }
+    ]
+  },
+  "46079960100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -6.067552993092686 },
+      { "feature": "DEMOGIDX_2", "shap": -5.08083851326257 },
+      { "feature": "P_PM25", "shap": -2.4457176970900036 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -8.837219287180341 },
+      { "feature": "DEMOGIDX_2", "shap": -3.905483777660411 },
+      { "feature": "P_PM25", "shap": -3.07440731797833 }
+    ]
+  },
+  "46079960201": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": 2.6736293112393468 },
+      { "feature": "P_PM25", "shap": -2.353139798932243 },
+      { "feature": "P_DSLPM", "shap": 2.0617810416966678 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -1.2909820878505707 },
+      { "feature": "P_PTRAF", "shap": -0.6873703211708926 },
+      { "feature": "DEMOGIDX_2", "shap": -0.5622878158278763 }
+    ]
+  },
+  "46079960202": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -2.3619308889843524 },
+      { "feature": "P_OZONE", "shap": 1.9862525771837682 },
+      { "feature": "P_DSLPM", "shap": 1.8507722353376448 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -1.6918948805704712 },
+      { "feature": "P_PM25", "shap": -1.171395407859236 },
+      { "feature": "P_UST", "shap": -0.6802819416113198 }
+    ]
+  },
+  "46079960300": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -5.7660339825320985 },
+      { "feature": "P_DSLPM", "shap": -3.318816002700478 },
+      { "feature": "P_OZONE", "shap": 1.201908262548968 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -5.911744356541894 },
+      { "feature": "DEMOGIDX_2", "shap": -3.5712306992593223 },
+      { "feature": "P_PM25", "shap": -0.9656099252961576 }
+    ]
+  },
+  "46081966101": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.400153399966657 },
+      { "feature": "P_DSLPM", "shap": -8.945883928891272 },
+      { "feature": "P_OZONE", "shap": -3.608284378647804 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.958007291588 },
+      { "feature": "P_PM25", "shap": -9.797182092089207 },
+      { "feature": "P_OZONE", "shap": -3.131435729424702 }
+    ]
+  },
+  "46081966102": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.691420422424562 },
+      { "feature": "P_DSLPM", "shap": -8.13712022553198 },
+      { "feature": "P_OZONE", "shap": -3.6564137945999393 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.194448832790368 },
+      { "feature": "P_PM25", "shap": -10.122319321427494 },
+      { "feature": "P_OZONE", "shap": -3.2616889113385694 }
+    ]
+  },
+  "46081966200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.551354956319555 },
+      { "feature": "P_OZONE", "shap": -5.150365196438506 },
+      { "feature": "P_PWDIS", "shap": 3.2165445747599004 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -11.978360650241376 },
+      { "feature": "P_DSLPM", "shap": -2.6426110835187138 },
+      { "feature": "P_PWDIS", "shap": 1.401908228546381 }
+    ]
+  },
+  "46081966301": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.709662859276868 },
+      { "feature": "P_DSLPM", "shap": -7.892849523136392 },
+      { "feature": "P_OZONE", "shap": -3.3964535766246264 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -13.419374468289316 },
+      { "feature": "P_DSLPM", "shap": -11.33000219577807 },
+      { "feature": "DEMOGIDX_2", "shap": -1.257615496806102 }
+    ]
+  },
+  "46081966303": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.826438378826715 },
+      { "feature": "P_DSLPM", "shap": -7.992731608711183 },
+      { "feature": "P_OZONE", "shap": -4.544729449944571 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -17.235164084881543 },
+      { "feature": "P_DSLPM", "shap": -9.101089557152008 },
+      { "feature": "P_OZONE", "shap": -2.1599990838032683 }
+    ]
+  },
+  "46081966304": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.769614573391154 },
+      { "feature": "P_DSLPM", "shap": -7.739322323137895 },
+      { "feature": "P_OZONE", "shap": -4.078154929490993 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -16.16055791183375 },
+      { "feature": "P_DSLPM", "shap": -9.657717471023789 },
+      { "feature": "DEMOGIDX_2", "shap": -2.218093085802393 }
+    ]
+  },
+  "46081966601": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -12.041890475931577 },
+      { "feature": "P_DSLPM", "shap": -7.765573299555108 },
+      { "feature": "P_OZONE", "shap": -2.950325835775584 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -18.062331363689154 },
+      { "feature": "P_DSLPM", "shap": -10.145487216180191 },
+      { "feature": "P_PTRAF", "shap": 0.77882103537675 }
+    ]
+  },
+  "46081966602": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -11.840025367080234 },
+      { "feature": "P_DSLPM", "shap": -8.108221591217443 },
+      { "feature": "P_OZONE", "shap": -2.2637197118182666 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -17.667753080278636 },
+      { "feature": "P_DSLPM", "shap": -10.613867093073203 },
+      { "feature": "DEMOGIDX_2", "shap": -0.840682475316571 }
+    ]
+  },
+  "46083010103": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.838427953626961 },
+      { "feature": "P_OZONE", "shap": 2.3357904727989807 },
+      { "feature": "P_LDPNT", "shap": -2.235719767413102 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.115508872200735 },
+      { "feature": "P_PM25", "shap": 4.3024366862047465 },
+      { "feature": "DEMOGIDX_2", "shap": -2.05444216853939 }
+    ]
+  },
+  "46083010107": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 6.522369081368669 },
+      { "feature": "P_DSLPM", "shap": 4.016846365975216 },
+      { "feature": "P_PTSDF", "shap": 3.5962211707606913 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.159372620806098 },
+      { "feature": "DEMOGIDX_2", "shap": -4.023626540316036 },
+      { "feature": "P_DSLPM", "shap": 3.4317250398173926 }
+    ]
+  },
+  "46083010109": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 7.462573167141527 },
+      { "feature": "DEMOGIDX_2", "shap": -2.628786709937267 },
+      { "feature": "P_LDPNT", "shap": -2.580233494313434 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 16.76009574317839 },
+      { "feature": "P_PM25", "shap": 5.485463677085936 },
+      { "feature": "DEMOGIDX_2", "shap": -3.004732954775682 }
+    ]
+  },
+  "46083010110": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.754597727824002 },
+      { "feature": "P_LDPNT", "shap": -3.19275623367168 },
+      { "feature": "P_PM25", "shap": 2.435220776614733 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 15.75850822940003 },
+      { "feature": "P_PM25", "shap": 5.402256033290177 },
+      { "feature": "DEMOGIDX_2", "shap": -1.4305711878964211 }
+    ]
+  },
+  "46083010111": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.628004329074174 },
+      { "feature": "P_PM25", "shap": 4.241331381662749 },
+      { "feature": "DEMOGIDX_2", "shap": -3.258159397658892 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 13.106855936683715 },
+      { "feature": "P_PM25", "shap": 6.372858168547973 },
+      { "feature": "DEMOGIDX_2", "shap": -4.647848860997474 }
+    ]
+  },
+  "46083010112": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.354950666967779 },
+      { "feature": "P_PM25", "shap": 4.358345742984675 },
+      { "feature": "P_OZONE", "shap": 2.6967694656411187 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.922114499248565 },
+      { "feature": "P_PM25", "shap": 7.681695794509724 },
+      { "feature": "DEMOGIDX_2", "shap": -2.487421198891243 }
+    ]
+  },
+  "46083010113": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.22704928856343 },
+      { "feature": "P_PM25", "shap": 4.419252856294625 },
+      { "feature": "P_LDPNT", "shap": -3.10941540859174 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 12.277425879128277 },
+      { "feature": "P_PM25", "shap": 7.590797477867454 },
+      { "feature": "DEMOGIDX_2", "shap": -2.7973344715253914 }
+    ]
+  },
+  "46083010114": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.151032105791383 },
+      { "feature": "P_DSLPM", "shap": 3.6992301845457405 },
+      { "feature": "DEMOGIDX_2", "shap": -3.694221358904615 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 5.75822842316702 },
+      { "feature": "DEMOGIDX_2", "shap": -4.647924875536701 },
+      { "feature": "P_DSLPM", "shap": 1.3308133492199703 }
+    ]
+  },
+  "46083010115": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.474740407532081 },
+      { "feature": "P_DSLPM", "shap": 2.8104058072343467 },
+      { "feature": "P_LDPNT", "shap": -2.4313851720979436 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -3.5597438665200025 },
+      { "feature": "P_PNPL", "shap": 0.9855799349024892 },
+      { "feature": "P_LDPNT", "shap": -0.9780647134128958 }
+    ]
+  },
+  "46083010116": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.273376418780535 },
+      { "feature": "P_PM25", "shap": 4.44193548721727 },
+      { "feature": "DEMOGIDX_2", "shap": -2.581814426202327 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 12.292356628626585 },
+      { "feature": "P_PM25", "shap": 7.286487583229318 },
+      { "feature": "DEMOGIDX_2", "shap": -2.8158982910902703 }
+    ]
+  },
+  "46083010200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 8.835919894860126 },
+      { "feature": "DEMOGIDX_2", "shap": -3.41893855759874 },
+      { "feature": "P_DSLPM", "shap": 3.0063047911506144 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.467162770167924 },
+      { "feature": "DEMOGIDX_2", "shap": -4.063973074875539 },
+      { "feature": "P_DSLPM", "shap": -1.152140247183852 }
+    ]
+  },
+  "46083010300": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.289649265832268 },
+      { "feature": "DEMOGIDX_2", "shap": -4.513340121358633 },
+      { "feature": "P_OZONE", "shap": 2.2221311366022563 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 5.442380440309644 },
+      { "feature": "DEMOGIDX_2", "shap": -4.644028220487526 },
+      { "feature": "P_DSLPM", "shap": -1.378207620200701 }
+    ]
+  },
+  "46083010400": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 10.983097384781576 },
+      { "feature": "DEMOGIDX_2", "shap": -4.147431046166457 },
+      { "feature": "P_PTSDF", "shap": -2.1857207788713278 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.834762429851107 },
+      { "feature": "DEMOGIDX_2", "shap": -3.998805477510905 },
+      { "feature": "P_DSLPM", "shap": -3.5644763590907678 }
+    ]
+  },
+  "46085940100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -10.041220309617929 },
+      { "feature": "P_DSLPM", "shap": -7.5440682496223594 },
+      { "feature": "P_OZONE", "shap": -3.1404910189751534 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.11589963207487 },
+      { "feature": "P_PM25", "shap": -12.05650062607252 },
+      { "feature": "P_PWDIS", "shap": -1.3680469474289567 }
+    ]
+  },
+  "46085972600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.642296850541607 },
+      { "feature": "P_DSLPM", "shap": -7.063893213253468 },
+      { "feature": "P_OZONE", "shap": -2.469808764809277 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.374928167727775 },
+      { "feature": "P_PM25", "shap": -10.948394465973834 },
+      { "feature": "DEMOGIDX_2", "shap": -2.333878481473075 }
+    ]
+  },
+  "46087964600": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -3.7381130457669496 },
+      { "feature": "P_DSLPM", "shap": -2.974508487507701 },
+      { "feature": "P_OZONE", "shap": 2.6297748189535923 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -5.171874298220501 },
+      { "feature": "DEMOGIDX_2", "shap": -2.8821387240011247 },
+      { "feature": "P_PWDIS", "shap": -1.526161485328339 }
+    ]
+  },
+  "46087964700": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -5.0912947059609 },
+      { "feature": "P_DSLPM", "shap": -3.7959361957758664 },
+      { "feature": "P_OZONE", "shap": 2.3647340316232293 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -7.237408979688771 },
+      { "feature": "DEMOGIDX_2", "shap": -3.767449590722099 },
+      { "feature": "P_PM25", "shap": -1.3677849219646305 }
+    ]
+  },
+  "46089963100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.20055558329448 },
+      { "feature": "P_PM25", "shap": -5.7542262177355585 },
+      { "feature": "P_PWDIS", "shap": -2.5501168995536863 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.576425408257638 },
+      { "feature": "P_PM25", "shap": -5.233519177801209 },
+      { "feature": "P_PNPL", "shap": -2.6328355113696307 }
+    ]
+  },
+  "46091950800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 9.0554139800556 },
+      { "feature": "P_DSLPM", "shap": -6.634971254775301 },
+      { "feature": "P_OZONE", "shap": 2.7912705156882294 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -14.3678475086065 },
+      { "feature": "P_PM25", "shap": 7.497023140356178 },
+      { "feature": "DEMOGIDX_2", "shap": -1.412825519309845 }
+    ]
+  },
+  "46093020200": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -10.773776948594023 },
+      { "feature": "P_PM25", "shap": -6.206721304184757 },
+      { "feature": "P_LDPNT", "shap": -1.4094156913459301 }
+    ],
+    "resp": [
+      { "feature": "P_OZONE", "shap": -8.147535168314352 },
+      { "feature": "P_PM25", "shap": -6.117189134177752 },
+      { "feature": "P_UST", "shap": 2.386205217263196 }
+    ]
+  },
+  "46093020302": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.158701424794272 },
+      { "feature": "P_PM25", "shap": -6.503046599621885 },
+      { "feature": "P_OZONE", "shap": -4.658503575194627 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.373652494638227 },
+      { "feature": "P_PM25", "shap": -6.9267578675411645 },
+      { "feature": "P_OZONE", "shap": -4.4646963371150195 }
+    ]
+  },
+  "46093020303": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.625325036654249 },
+      { "feature": "P_PM25", "shap": -6.472378509999253 },
+      { "feature": "P_OZONE", "shap": -3.849901200073073 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.134743396514095 },
+      { "feature": "P_PM25", "shap": -9.526230527795851 },
+      { "feature": "P_OZONE", "shap": -2.7588617879291997 }
+    ]
+  },
+  "46093020304": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.705069377101027 },
+      { "feature": "P_DSLPM", "shap": -7.461064367135987 },
+      { "feature": "P_OZONE", "shap": -4.422543800385902 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.701438520462252 },
+      { "feature": "P_PM25", "shap": -10.20771742740646 },
+      { "feature": "P_OZONE", "shap": -3.53722106306348 }
+    ]
+  },
+  "46093020401": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.865636864192783 },
+      { "feature": "P_DSLPM", "shap": -5.485636351881549 },
+      { "feature": "P_OZONE", "shap": -4.398296822976554 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.216103970631957 },
+      { "feature": "P_DSLPM", "shap": -9.035989688658155 },
+      { "feature": "P_OZONE", "shap": -3.6243600672238974 }
+    ]
+  },
+  "46093020402": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.768495687423274 },
+      { "feature": "P_DSLPM", "shap": -5.522992687560618 },
+      { "feature": "P_OZONE", "shap": -4.774012267850339 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.502958125397562 },
+      { "feature": "P_DSLPM", "shap": -9.063765896600671 },
+      { "feature": "P_OZONE", "shap": -3.6403832521848383 }
+    ]
+  },
+  "46093020500": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.861378590106034 },
+      { "feature": "P_DSLPM", "shap": -8.626803023824468 },
+      { "feature": "P_OZONE", "shap": -5.093115684725344 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.207053453172557 },
+      { "feature": "P_PM25", "shap": -10.656809059646912 },
+      { "feature": "P_OZONE", "shap": -5.02958048812463 }
+    ]
+  },
+  "46097961600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -4.776103681325912 },
+      { "feature": "DEMOGIDX_2", "shap": -2.7207815877534447 },
+      { "feature": "P_OZONE", "shap": 2.3409480957128106 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.893321906994096 },
+      { "feature": "DEMOGIDX_2", "shap": -1.8674961031042039 },
+      { "feature": "P_PWDIS", "shap": -1.469654621281661 }
+    ]
+  },
+  "46099000100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.730040713436901 },
+      { "feature": "P_PTSDF", "shap": 5.506980248140171 },
+      { "feature": "P_PRMP", "shap": 2.9545994556881485 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 25.468540149275213 },
+      { "feature": "P_PTSDF", "shap": 6.074582476355135 },
+      { "feature": "P_PRMP", "shap": 4.529737378479913 }
+    ]
+  },
+  "46099000201": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 13.723524200217799 },
+      { "feature": "P_PM25", "shap": 3.287430229620077 },
+      { "feature": "P_PWDIS", "shap": 3.037904162099585 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 32.617289767321196 },
+      { "feature": "P_PTSDF", "shap": 5.230390686355531 },
+      { "feature": "P_PRMP", "shap": 4.254230328788981 }
+    ]
+  },
+  "46099000202": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.729144455203787 },
+      { "feature": "P_PM25", "shap": 4.299480003197678 },
+      { "feature": "P_PWDIS", "shap": -1.9023541648779065 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 27.957972297407686 },
+      { "feature": "P_PWDIS", "shap": -2.185823648236692 },
+      { "feature": "P_PTSDF", "shap": 1.235194881684147 }
+    ]
+  },
+  "46099000300": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 12.539536530515178 },
+      { "feature": "P_PWDIS", "shap": 3.4714970204653217 },
+      { "feature": "P_PTRAF", "shap": -2.43780278542079 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 27.472798875886948 },
+      { "feature": "P_PTSDF", "shap": 4.041062638685108 },
+      { "feature": "P_PWDIS", "shap": 3.641860879827291 }
+    ]
+  },
+  "46099000401": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 10.19085982755758 },
+      { "feature": "P_PM25", "shap": 3.235535590550862 },
+      { "feature": "P_PWDIS", "shap": 2.830095072793774 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 23.800428469702602 },
+      { "feature": "P_PWDIS", "shap": 3.407173822131008 },
+      { "feature": "P_OZONE", "shap": 2.9445696671772748 }
+    ]
+  },
+  "46099000405": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.488178024403751 },
+      { "feature": "P_LDPNT", "shap": -2.4731145346257835 },
+      { "feature": "P_OZONE", "shap": 2.438329605392646 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 13.545768551249058 },
+      { "feature": "P_PM25", "shap": 2.7160276240017267 },
+      { "feature": "P_OZONE", "shap": 2.1120745120930953 }
+    ]
+  },
+  "46099000406": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.250379329007119 },
+      { "feature": "P_PM25", "shap": 3.8580265481909737 },
+      { "feature": "P_PWDIS", "shap": 2.6693782763089984 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 23.455961200520395 },
+      { "feature": "P_PWDIS", "shap": 2.8339439484570175 },
+      { "feature": "P_PM25", "shap": 2.5380578194744885 }
+    ]
+  },
+  "46099000407": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.488218649998307 },
+      { "feature": "P_OZONE", "shap": 2.834909237702377 },
+      { "feature": "P_LDPNT", "shap": -2.1706368206394835 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.652286576014012 },
+      { "feature": "P_PM25", "shap": 5.646360611813143 },
+      { "feature": "P_LDPNT", "shap": -1.3586352921836078 }
+    ]
+  },
+  "46099000408": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 7.6603853395581245 },
+      { "feature": "P_PM25", "shap": 3.2238948756130412 },
+      { "feature": "P_LDPNT", "shap": -2.6205405939463526 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 17.243431634958835 },
+      { "feature": "P_OZONE", "shap": 2.79272847268614 },
+      { "feature": "P_PWDIS", "shap": 2.0474650497734546 }
+    ]
+  },
+  "46099000500": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 17.89231531889178 },
+      { "feature": "P_PM25", "shap": 3.697237945315428 },
+      { "feature": "P_PWDIS", "shap": 2.350745562170632 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 36.87878026263788 },
+      { "feature": "P_PWDIS", "shap": 4.162018272187561 },
+      { "feature": "P_PTSDF", "shap": 3.9079775237315335 }
+    ]
+  },
+  "46099000600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 14.594158292775974 },
+      { "feature": "P_PM25", "shap": 4.924298070487566 },
+      { "feature": "P_PWDIS", "shap": 3.3894751172559334 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 31.473453147532418 },
+      { "feature": "P_PWDIS", "shap": 2.838676008246839 },
+      { "feature": "P_PM25", "shap": 2.667412873655558 }
+    ]
+  },
+  "46099000701": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 17.586005831612272 },
+      { "feature": "P_PM25", "shap": 4.706729251476936 },
+      { "feature": "P_PWDIS", "shap": 2.3212009441806005 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 33.39700120572001 },
+      { "feature": "P_PWDIS", "shap": 4.969770302902907 },
+      { "feature": "P_PTSDF", "shap": 3.3171398352482355 }
+    ]
+  },
+  "46099000702": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 18.632901424979792 },
+      { "feature": "P_PM25", "shap": 5.491105766785331 },
+      { "feature": "P_OZONE", "shap": 4.127750938357785 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 34.06261641897261 },
+      { "feature": "P_PWDIS", "shap": 3.589262076783925 },
+      { "feature": "P_PTSDF", "shap": 2.54677230484318 }
+    ]
+  },
+  "46099000900": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.897346978997811 },
+      { "feature": "P_PM25", "shap": 3.733339963299222 },
+      { "feature": "P_PTSDF", "shap": 1.5346054047625513 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 27.49660055811517 },
+      { "feature": "P_PM25", "shap": 2.2364975799620153 },
+      { "feature": "P_OZONE", "shap": 1.6657097384519874 }
+    ]
+  },
+  "46099001001": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.0684807224944235 },
+      { "feature": "P_OZONE", "shap": 3.108130231820978 },
+      { "feature": "P_PWDIS", "shap": 2.2051254553114994 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.199452678943054 },
+      { "feature": "P_PWDIS", "shap": 2.61782107392326 },
+      { "feature": "P_OZONE", "shap": 1.8286158412357327 }
+    ]
+  },
+  "46099001002": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 8.212860375605523 },
+      { "feature": "P_PWDIS", "shap": 3.010704230200499 },
+      { "feature": "P_OZONE", "shap": 2.7547629931988196 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 17.038293709270658 },
+      { "feature": "P_PM25", "shap": 3.144808484185487 },
+      { "feature": "P_PWDIS", "shap": 2.9383055522479116 }
+    ]
+  },
+  "46099001105": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.4686969565786425 },
+      { "feature": "P_LDPNT", "shap": -2.586439695521258 },
+      { "feature": "DEMOGIDX_2", "shap": -2.5226542381290344 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 8.905462818867527 },
+      { "feature": "P_PM25", "shap": 3.8011390769667925 },
+      { "feature": "DEMOGIDX_2", "shap": -2.6276028880570084 }
+    ]
+  },
+  "46099001107": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.125886990707368 },
+      { "feature": "P_LDPNT", "shap": -2.8513794948067517 },
+      { "feature": "P_OZONE", "shap": 2.3041142385685816 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 14.16798871435225 },
+      { "feature": "P_PM25", "shap": 3.3639041855838148 },
+      { "feature": "P_PWDIS", "shap": 2.069757390227169 }
+    ]
+  },
+  "46099001108": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.470644353125245 },
+      { "feature": "P_OZONE", "shap": 2.9408645780431106 },
+      { "feature": "P_PM25", "shap": 2.2273507207585497 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 12.586279081385582 },
+      { "feature": "P_PM25", "shap": 5.546263586319983 },
+      { "feature": "DEMOGIDX_2", "shap": -1.577133056987077 }
+    ]
+  },
+  "46099001109": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.558635592116042 },
+      { "feature": "P_PWDIS", "shap": 3.4432803169311956 },
+      { "feature": "P_PM25", "shap": 3.24758612009231 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 22.436004048679024 },
+      { "feature": "P_PM25", "shap": 6.578902980620041 },
+      { "feature": "P_PWDIS", "shap": 3.1169094848725947 }
+    ]
+  },
+  "46099001110": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 9.143721013246104 },
+      { "feature": "P_PM25", "shap": 3.6367657493287697 },
+      { "feature": "P_PWDIS", "shap": 2.8989742691395803 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 22.746667968779803 },
+      { "feature": "P_PM25", "shap": 6.529111977582797 },
+      { "feature": "P_PWDIS", "shap": 2.608616056460887 }
+    ]
+  },
+  "46099001111": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.71684035776183 },
+      { "feature": "DEMOGIDX_2", "shap": -3.9967315006721766 },
+      { "feature": "P_LDPNT", "shap": -2.280776308844797 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.394343727715313 },
+      { "feature": "DEMOGIDX_2", "shap": -4.257169691855088 },
+      { "feature": "P_PM25", "shap": 3.2425547580141574 }
+    ]
+  },
+  "46099001112": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.628881319668144 },
+      { "feature": "DEMOGIDX_2", "shap": -3.836106635816395 },
+      { "feature": "P_LDPNT", "shap": -2.3762588728545233 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.055851282030345 },
+      { "feature": "DEMOGIDX_2", "shap": -4.253863179525361 },
+      { "feature": "P_PM25", "shap": 3.3003137743938713 }
+    ]
+  },
+  "46099001200": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 10.673674227921293 },
+      { "feature": "P_PM25", "shap": 3.2745080285472796 },
+      { "feature": "P_PWDIS", "shap": 2.8450704144034535 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 24.407347871530803 },
+      { "feature": "P_PM25", "shap": 4.203749523716978 },
+      { "feature": "P_PWDIS", "shap": 2.530521075204015 }
+    ]
+  },
+  "46099001501": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 12.929256566716358 },
+      { "feature": "P_PM25", "shap": 4.069959709341638 },
+      { "feature": "P_PWDIS", "shap": 3.3925170717108997 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 26.393881544414906 },
+      { "feature": "P_PM25", "shap": 4.8345538774086165 },
+      { "feature": "P_PWDIS", "shap": 2.6136045295000074 }
+    ]
+  },
+  "46099001502": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 11.095419294880703 },
+      { "feature": "P_PM25", "shap": 3.39095985700842 },
+      { "feature": "P_PTSDF", "shap": 2.0288961509615184 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 27.15791327917017 },
+      { "feature": "P_PM25", "shap": 4.0468879118561745 },
+      { "feature": "P_PTSDF", "shap": 1.5339751418447123 }
+    ]
+  },
+  "46099001600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 15.009712918065489 },
+      { "feature": "P_PM25", "shap": 4.071514713210053 },
+      { "feature": "P_PWDIS", "shap": 2.486166195580736 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 26.189327554954215 },
+      { "feature": "DEMOGIDX_2", "shap": -5.4002765868324785 },
+      { "feature": "P_PM25", "shap": 2.5114423984102903 }
+    ]
+  },
+  "46099001700": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 12.030559091549367 },
+      { "feature": "P_PM25", "shap": 3.6518293531844392 },
+      { "feature": "P_PWDIS", "shap": 2.880670752809383 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 23.723993352195247 },
+      { "feature": "P_PWDIS", "shap": 3.551827903855592 },
+      { "feature": "P_PTRAF", "shap": 2.174653562643798 }
+    ]
+  },
+  "46099001801": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.026395570114255 },
+      { "feature": "P_OZONE", "shap": 2.4534218569262887 },
+      { "feature": "P_PM25", "shap": 2.0137321343040093 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 12.504316571149975 },
+      { "feature": "P_PM25", "shap": 4.2816631584707645 },
+      { "feature": "DEMOGIDX_2", "shap": -1.5632111699506641 }
+    ]
+  },
+  "46099001804": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.1457403852231804 },
+      { "feature": "P_OZONE", "shap": 2.513307391365524 },
+      { "feature": "P_LDPNT", "shap": -2.1930107746226715 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 11.923738555144519 },
+      { "feature": "P_PM25", "shap": 5.232932975348085 },
+      { "feature": "DEMOGIDX_2", "shap": -1.7495685776416212 }
+    ]
+  },
+  "46099001805": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 5.21407450184226 },
+      { "feature": "P_PM25", "shap": 3.9617040583631025 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1256764877494425 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 10.86384657304734 },
+      { "feature": "P_PM25", "shap": 6.577774025453254 },
+      { "feature": "DEMOGIDX_2", "shap": -4.139988749366021 }
+    ]
+  },
+  "46099001806": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 4.4132355084409935 },
+      { "feature": "P_DSLPM", "shap": 4.1967363797687 },
+      { "feature": "P_LDPNT", "shap": -2.6440902320621533 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 10.11728878421709 },
+      { "feature": "P_PM25", "shap": 6.941518201604485 },
+      { "feature": "P_LDPNT", "shap": -1.33945130684413 }
+    ]
+  },
+  "46099001901": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 12.555092939091846 },
+      { "feature": "P_PM25", "shap": 3.5909082052437586 },
+      { "feature": "P_PWDIS", "shap": 3.3499757118849085 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 25.002003000229596 },
+      { "feature": "P_PM25", "shap": 4.179798509976827 },
+      { "feature": "P_PWDIS", "shap": 2.7877141003869474 }
+    ]
+  },
+  "46099001902": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.894374398794025 },
+      { "feature": "DEMOGIDX_2", "shap": -2.8347697672015055 },
+      { "feature": "P_LDPNT", "shap": -2.746715670125559 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 16.12542582664639 },
+      { "feature": "P_PM25", "shap": 4.5259805327374485 },
+      { "feature": "DEMOGIDX_2", "shap": -3.621796582667157 }
+    ]
+  },
+  "46099010101": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -3.053404673114419 },
+      { "feature": "P_OZONE", "shap": 2.2722327822260557 },
+      { "feature": "P_DSLPM", "shap": 1.9895605585724114 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -2.930911762584001 },
+      { "feature": "P_OZONE", "shap": 1.3925612137676218 },
+      { "feature": "P_PNPL", "shap": 0.9032630402315408 }
+    ]
+  },
+  "46099010102": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 3.2558752745576203 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1749795040860773 },
+      { "feature": "P_OZONE", "shap": 2.129409056659788 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -3.0236658814176915 },
+      { "feature": "P_DSLPM", "shap": 1.4472026126272977 },
+      { "feature": "P_OZONE", "shap": 1.3908117003017104 }
+    ]
+  },
+  "46099010200": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.92462631739676 },
+      { "feature": "P_PTSDF", "shap": -1.4336758763622492 },
+      { "feature": "P_OZONE", "shap": 1.1204648053552955 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -4.0793830991489815 },
+      { "feature": "P_DSLPM", "shap": -2.102752014589496 },
+      { "feature": "P_UST", "shap": -0.8268942293757573 }
+    ]
+  },
+  "46099010300": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.223619488030672 },
+      { "feature": "P_OZONE", "shap": 1.5490070364251733 },
+      { "feature": "P_PWDIS", "shap": 1.215959842391312 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -3.3895619010087104 },
+      { "feature": "P_DSLPM", "shap": -2.2684605313511566 },
+      { "feature": "P_PNPL", "shap": 1.0367416738625617 }
+    ]
+  },
+  "46099010401": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 4.824701805142686 },
+      { "feature": "P_PM25", "shap": 4.543875717967748 },
+      { "feature": "DEMOGIDX_2", "shap": -2.976720324847847 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.331034059310332 },
+      { "feature": "P_DSLPM", "shap": 6.044763677194714 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1306283890397753 }
+    ]
+  },
+  "46099010402": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 6.612520817066542 },
+      { "feature": "P_DSLPM", "shap": 3.835582000510767 },
+      { "feature": "DEMOGIDX_2", "shap": -3.6581047883164137 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 5.2332057418301705 },
+      { "feature": "DEMOGIDX_2", "shap": -4.432793485404691 },
+      { "feature": "P_DSLPM", "shap": 1.489217501115054 }
+    ]
+  },
+  "46099010403": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.159301036410033 },
+      { "feature": "P_OZONE", "shap": 3.535056870575063 },
+      { "feature": "DEMOGIDX_2", "shap": -3.4749976780638097 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 8.552750610485672 },
+      { "feature": "DEMOGIDX_2", "shap": -4.370319849858061 },
+      { "feature": "P_PM25", "shap": 4.116530267633498 }
+    ]
+  },
+  "46099010404": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 4.507578413337469 },
+      { "feature": "DEMOGIDX_2", "shap": -2.9101449511945248 },
+      { "feature": "P_OZONE", "shap": 2.188046687387396 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 3.9440737656410785 },
+      { "feature": "DEMOGIDX_2", "shap": -2.848725169785321 },
+      { "feature": "P_OZONE", "shap": 1.4631098759314045 }
+    ]
+  },
+  "46099010405": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.56079963427037 },
+      { "feature": "P_PM25", "shap": 2.5949330975441263 },
+      { "feature": "P_LDPNT", "shap": -2.324074059566483 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 14.034799532759935 },
+      { "feature": "P_OZONE", "shap": 1.9821152620844078 },
+      { "feature": "P_PTSDF", "shap": 1.4707056541694328 }
+    ]
+  },
+  "46099010406": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 6.11489591807127 },
+      { "feature": "DEMOGIDX_2", "shap": -2.800695123579353 },
+      { "feature": "P_OZONE", "shap": 2.0436011373857035 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 6.906673286193982 },
+      { "feature": "DEMOGIDX_2", "shap": -2.2431034524273126 },
+      { "feature": "P_OZONE", "shap": 1.4388098248664756 }
+    ]
+  },
+  "46099010501": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 5.483370732921176 },
+      { "feature": "P_DSLPM", "shap": 5.1403359076566995 },
+      { "feature": "P_PTSDF", "shap": 3.3475613396894186 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 7.874912896119058 },
+      { "feature": "P_PM25", "shap": 6.683690102882683 },
+      { "feature": "DEMOGIDX_2", "shap": -2.97176193376421 }
+    ]
+  },
+  "46099010502": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 5.775843117386103 },
+      { "feature": "P_DSLPM", "shap": 5.070071102688089 },
+      { "feature": "DEMOGIDX_2", "shap": -3.517445939062163 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 6.3195951207727195 },
+      { "feature": "P_PM25", "shap": 5.67649997368455 },
+      { "feature": "DEMOGIDX_2", "shap": -4.875372081868118 }
+    ]
+  },
+  "46099010600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": 10.481016614148393 },
+      { "feature": "P_PM25", "shap": 3.3916800864739343 },
+      { "feature": "P_PNPL", "shap": 2.1852129969373344 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": 26.428541746316476 },
+      { "feature": "P_PM25", "shap": 5.052710608877241 },
+      { "feature": "P_PTSDF", "shap": 2.045997299491428 }
+    ]
+  },
+  "46101959600": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.155429491754621 },
+      { "feature": "P_OZONE", "shap": 1.8066126659698785 },
+      { "feature": "P_PWDIS", "shap": 1.1375845241732896 }
+    ],
+    "resp": [
+      { "feature": "DEMOGIDX_2", "shap": -2.993427859833464 },
+      { "feature": "P_DSLPM", "shap": -2.196046937936917 },
+      { "feature": "P_OZONE", "shap": 0.7994422177085653 }
+    ]
+  },
+  "46101959700": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": 2.7161681353207676 },
+      { "feature": "DEMOGIDX_2", "shap": 1.5840723022283054 },
+      { "feature": "P_PTRAF", "shap": 1.1250994343776255 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -4.523721593385562 },
+      { "feature": "P_PM25", "shap": -1.320748208705336 },
+      { "feature": "P_OZONE", "shap": 1.0604274511802942 }
+    ]
+  },
+  "46102941100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.349101385362447 },
+      { "feature": "P_DSLPM", "shap": -6.931896846881136 },
+      { "feature": "P_OZONE", "shap": -6.05902689936338 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.881847953852265 },
+      { "feature": "P_PM25", "shap": -10.969732773317956 },
+      { "feature": "DEMOGIDX_2", "shap": -2.838411953563336 }
+    ]
+  },
+  "46103010201": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.833581675309688 },
+      { "feature": "P_OZONE", "shap": -7.115798722787295 },
+      { "feature": "P_DSLPM", "shap": 3.598083877041936 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.07516507363529 },
+      { "feature": "P_DSLPM", "shap": 11.206184480120427 },
+      { "feature": "P_PWDIS", "shap": -2.1092903977259994 }
+    ]
+  },
+  "46103010202": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.805911094844341 },
+      { "feature": "P_OZONE", "shap": -7.660733454071451 },
+      { "feature": "P_DSLPM", "shap": 3.761812805775553 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.631708309749374 },
+      { "feature": "P_DSLPM", "shap": 8.945465207924135 },
+      { "feature": "P_PWDIS", "shap": -2.3000263352598993 }
+    ]
+  },
+  "46103010300": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -7.401458317434881 },
+      { "feature": "P_PM25", "shap": -6.525396032892168 },
+      { "feature": "P_DSLPM", "shap": 3.5370716730691494 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -10.820213561855489 },
+      { "feature": "P_DSLPM", "shap": 9.432001497675664 },
+      { "feature": "P_PWDIS", "shap": -1.828349497448653 }
+    ]
+  },
+  "46103010400": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -9.960348326917737 },
+      { "feature": "P_PM25", "shap": -7.355796591825783 },
+      { "feature": "P_DSLPM", "shap": 3.032185005452484 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.171814055839786 },
+      { "feature": "P_OZONE", "shap": -7.582276217967737 },
+      { "feature": "P_DSLPM", "shap": 6.663891106378287 }
+    ]
+  },
+  "46103010500": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -8.86543163486058 },
+      { "feature": "P_PM25", "shap": -6.852612933386117 },
+      { "feature": "P_DSLPM", "shap": 2.195858622994274 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -10.372828173820162 },
+      { "feature": "P_DSLPM", "shap": 6.633625764837489 },
+      { "feature": "P_OZONE", "shap": -3.8817114975792357 }
+    ]
+  },
+  "46103010600": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -7.641578348148614 },
+      { "feature": "P_PM25", "shap": -6.595141317397356 },
+      { "feature": "P_DSLPM", "shap": 2.801824222384021 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -8.326603714671219 },
+      { "feature": "P_DSLPM", "shap": 5.200361035321839 },
+      { "feature": "P_OZONE", "shap": -2.223164269377012 }
+    ]
+  },
+  "46103010700": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -6.898475373007823 },
+      { "feature": "P_PM25", "shap": -6.814217391833663 },
+      { "feature": "P_DSLPM", "shap": 2.508135892879218 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.447271344844484 },
+      { "feature": "P_DSLPM", "shap": 6.282223740690387 },
+      { "feature": "P_PWDIS", "shap": -1.3052696651779114 }
+    ]
+  },
+  "46103010800": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.6235015497449785 },
+      { "feature": "P_OZONE", "shap": -6.036248232985381 },
+      { "feature": "P_DSLPM", "shap": 3.042203164845705 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.081211574167247 },
+      { "feature": "P_DSLPM", "shap": 8.6487396354042 },
+      { "feature": "P_PWDIS", "shap": -1.4620255250297487 }
+    ]
+  },
+  "46103010904": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -7.165594712482998 },
+      { "feature": "P_PM25", "shap": -5.313070622147061 },
+      { "feature": "P_DSLPM", "shap": 2.491860721455887 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -7.660648039532825 },
+      { "feature": "P_DSLPM", "shap": 3.969648038488813 },
+      { "feature": "P_OZONE", "shap": -2.005390880082268 }
+    ]
+  },
+  "46103010905": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -6.280233876495622 },
+      { "feature": "P_DSLPM", "shap": -3.8056616795714944 },
+      { "feature": "P_OZONE", "shap": -3.7186602832807694 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -8.560812750272452 },
+      { "feature": "P_PM25", "shap": -7.363047831300646 },
+      { "feature": "DEMOGIDX_2", "shap": -0.9689541728340555 }
+    ]
+  },
+  "46103010906": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -9.053077698210254 },
+      { "feature": "P_PM25", "shap": -6.790855902237817 },
+      { "feature": "P_DSLPM", "shap": 1.974646982550621 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -10.623022718305002 },
+      { "feature": "P_OZONE", "shap": -7.034880398123059 },
+      { "feature": "P_DSLPM", "shap": 6.849997961716727 }
+    ]
+  },
+  "46103010907": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -7.939489626269787 },
+      { "feature": "P_PM25", "shap": -6.084680414786562 },
+      { "feature": "P_DSLPM", "shap": 2.2046878456138073 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -7.843556361543015 },
+      { "feature": "P_OZONE", "shap": -3.3712058326625267 },
+      { "feature": "P_DSLPM", "shap": 3.342859468543902 }
+    ]
+  },
+  "46103010908": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -8.728818779444556 },
+      { "feature": "P_PM25", "shap": -6.416143940086476 },
+      { "feature": "P_LDPNT", "shap": -1.9809218547306955 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -8.034853974562138 },
+      { "feature": "P_OZONE", "shap": -5.285030036922544 },
+      { "feature": "P_DSLPM", "shap": 3.2440551806660367 }
+    ]
+  },
+  "46103011001": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.5562119110208 },
+      { "feature": "P_OZONE", "shap": -6.497541344445199 },
+      { "feature": "P_DSLPM", "shap": 3.229820237085223 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -9.3974287614692 },
+      { "feature": "P_DSLPM", "shap": 8.729432560079731 },
+      { "feature": "P_OZONE", "shap": -1.3806048120884225 }
+    ]
+  },
+  "46103011002": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -6.349232921428047 },
+      { "feature": "P_OZONE", "shap": -5.166528510885546 },
+      { "feature": "DEMOGIDX_2", "shap": -2.1414664690475913 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -7.8870519317872825 },
+      { "feature": "DEMOGIDX_2", "shap": -2.784057447188534 },
+      { "feature": "P_PNPL", "shap": 1.159092164915055 }
+    ]
+  },
+  "46103011004": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -8.34771954807453 },
+      { "feature": "P_PM25", "shap": -8.153750741654076 },
+      { "feature": "DEMOGIDX_2", "shap": -2.7489092721883206 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.718262225333602 },
+      { "feature": "P_PM25", "shap": -8.68305865094997 },
+      { "feature": "DEMOGIDX_2", "shap": -3.7755238897458185 }
+    ]
+  },
+  "46103011005": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -12.409581281538122 },
+      { "feature": "P_DSLPM", "shap": -7.6493135310523215 },
+      { "feature": "DEMOGIDX_2", "shap": -2.755397568186745 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -14.869809978464618 },
+      { "feature": "P_DSLPM", "shap": -11.457305710165528 },
+      { "feature": "DEMOGIDX_2", "shap": -2.683165709724417 }
+    ]
+  },
+  "46103011100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -6.828968091839925 },
+      { "feature": "P_OZONE", "shap": -6.506583244930953 },
+      { "feature": "P_DSLPM", "shap": 2.1109970999136567 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -8.680579009987413 },
+      { "feature": "P_DSLPM", "shap": 2.1114601345406845 },
+      { "feature": "P_OZONE", "shap": -1.942803806591546 }
+    ]
+  },
+  "46103011200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -7.456681138779968 },
+      { "feature": "P_OZONE", "shap": -7.008528202234301 },
+      { "feature": "P_DSLPM", "shap": 2.8907596041634678 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -8.319325449392199 },
+      { "feature": "P_DSLPM", "shap": 4.384528461741284 },
+      { "feature": "P_OZONE", "shap": -1.5579798582976219 }
+    ]
+  },
+  "46103011300": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -8.85290798900649 },
+      { "feature": "P_PM25", "shap": -7.447704723882489 },
+      { "feature": "P_OZONE", "shap": -3.225432173637673 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.85783136400394 },
+      { "feature": "P_PM25", "shap": -8.264658326590434 },
+      { "feature": "DEMOGIDX_2", "shap": -2.41389532216941 }
+    ]
+  },
+  "46103011400": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -8.494823659245158 },
+      { "feature": "P_PM25", "shap": -5.493699871203862 },
+      { "feature": "P_DSLPM", "shap": 1.957166086724028 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -7.975730698462575 },
+      { "feature": "P_OZONE", "shap": -2.6590642206848134 },
+      { "feature": "P_DSLPM", "shap": 2.1239356734696777 }
+    ]
+  },
+  "46103011601": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.975786019242369 },
+      { "feature": "P_DSLPM", "shap": -7.56216236342676 },
+      { "feature": "P_OZONE", "shap": -3.427244240781292 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.450189229357056 },
+      { "feature": "P_PM25", "shap": -10.169955370798707 },
+      { "feature": "P_OZONE", "shap": -2.7199663229857105 }
+    ]
+  },
+  "46103011602": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -11.123251414871774 },
+      { "feature": "P_DSLPM", "shap": -6.841584714073687 },
+      { "feature": "P_OZONE", "shap": -4.108843899937346 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.343780902731233 },
+      { "feature": "P_PM25", "shap": -10.9248697965499 },
+      { "feature": "P_OZONE", "shap": -2.7236138538678643 }
+    ]
+  },
+  "46103011700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -14.705234587979502 },
+      { "feature": "P_DSLPM", "shap": -8.47440303336829 },
+      { "feature": "DEMOGIDX_2", "shap": -2.0159776165522634 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -17.491326445145532 },
+      { "feature": "P_DSLPM", "shap": -9.667415978224017 },
+      { "feature": "DEMOGIDX_2", "shap": -1.572356573283905 }
+    ]
+  },
+  "46103011800": {
+    "cancer": [
+      { "feature": "P_OZONE", "shap": -8.096243053186917 },
+      { "feature": "P_PM25", "shap": -7.779903120519593 },
+      { "feature": "P_LDPNT", "shap": -1.9183343480713666 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -7.809164432925172 },
+      { "feature": "P_OZONE", "shap": -4.266205083634705 },
+      { "feature": "P_DSLPM", "shap": 1.7998199942242354 }
+    ]
+  },
+  "46105968300": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.121465635392815 },
+      { "feature": "P_PM25", "shap": -8.172749913781882 },
+      { "feature": "P_OZONE", "shap": -3.795786254631821 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.330693843350746 },
+      { "feature": "P_PM25", "shap": -11.12630439933855 },
+      { "feature": "P_OZONE", "shap": -3.6582043849490584 }
+    ]
+  },
+  "46107000100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.39840709575452 },
+      { "feature": "P_DSLPM", "shap": -7.861800613645464 },
+      { "feature": "P_OZONE", "shap": -1.611904797309544 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.30291805961635 },
+      { "feature": "P_PM25", "shap": -9.711278887005756 },
+      { "feature": "P_PNPL", "shap": -1.67293202271685 }
+    ]
+  },
+  "46109940700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 11.597928657256999 },
+      { "feature": "P_DSLPM", "shap": -5.892883986253292 },
+      { "feature": "P_OZONE", "shap": 3.9297653536126016 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.397034873776137 },
+      { "feature": "P_DSLPM", "shap": -7.2191453922505024 },
+      { "feature": "DEMOGIDX_2", "shap": 1.3208988163410686 }
+    ]
+  },
+  "46109950400": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.16682593858335 },
+      { "feature": "P_DSLPM", "shap": -5.417685450380668 },
+      { "feature": "DEMOGIDX_2", "shap": -2.818890641592443 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.282559763253666 },
+      { "feature": "P_PM25", "shap": 7.837924245573813 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1749601596477444 }
+    ]
+  },
+  "46111962100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.639508953876794 },
+      { "feature": "DEMOGIDX_2", "shap": -3.584721956225112 },
+      { "feature": "P_PM25", "shap": -2.9094608752056956 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.004148633102886 },
+      { "feature": "DEMOGIDX_2", "shap": -3.487838353831321 },
+      { "feature": "P_PM25", "shap": -1.8700422886479646 }
+    ]
+  },
+  "46115000100": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.099215960949659 },
+      { "feature": "DEMOGIDX_2", "shap": -4.229624602580443 },
+      { "feature": "P_PM25", "shap": -3.000658766720444 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -15.324892370358576 },
+      { "feature": "DEMOGIDX_2", "shap": -4.4448983411304654 },
+      { "feature": "P_PM25", "shap": -2.587520397705957 }
+    ]
+  },
+  "46115000200": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -4.9485770636796955 },
+      { "feature": "P_PM25", "shap": -2.3765679153427484 },
+      { "feature": "P_OZONE", "shap": -1.661144641044084 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -9.848093218517024 },
+      { "feature": "P_PNPL", "shap": -2.5178534415224565 },
+      { "feature": "P_PM25", "shap": -2.065530197964981 }
+    ]
+  },
+  "46115000300": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -7.194774168012664 },
+      { "feature": "DEMOGIDX_2", "shap": -3.6396334733534603 },
+      { "feature": "P_OZONE", "shap": 1.355029288844671 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.233066424422432 },
+      { "feature": "P_PM25", "shap": 4.501820273185149 },
+      { "feature": "DEMOGIDX_2", "shap": -4.197312250544782 }
+    ]
+  },
+  "46117960100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.800617431011052 },
+      { "feature": "P_DSLPM", "shap": -7.097963205520063 },
+      { "feature": "P_OZONE", "shap": -3.2539892652397975 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -12.379721543524647 },
+      { "feature": "P_DSLPM", "shap": -12.096823857794515 },
+      { "feature": "DEMOGIDX_2", "shap": -1.925094527537003 }
+    ]
+  },
+  "46119979100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.793024067683145 },
+      { "feature": "P_DSLPM", "shap": -6.860333138592541 },
+      { "feature": "P_OZONE", "shap": -2.696043381479103 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -12.048809078959748 },
+      { "feature": "P_PM25", "shap": -9.521427515853429 },
+      { "feature": "DEMOGIDX_2", "shap": -2.45548139668419 }
+    ]
+  },
+  "46123971600": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.9330092282407 },
+      { "feature": "P_DSLPM", "shap": -6.531319295372814 },
+      { "feature": "P_OZONE", "shap": -2.9031656049052255 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -11.039241791996174 },
+      { "feature": "P_PM25", "shap": -10.569223203087459 },
+      { "feature": "P_OZONE", "shap": -1.9267988134722691 }
+    ]
+  },
+  "46123971700": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.965603332445026 },
+      { "feature": "P_DSLPM", "shap": -6.219814954251051 },
+      { "feature": "P_OZONE", "shap": -3.2052569017675707 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -10.391085416204296 },
+      { "feature": "P_PM25", "shap": -10.330574422894278 },
+      { "feature": "P_OZONE", "shap": -1.8060828840220347 }
+    ]
+  },
+  "46125965100": {
+    "cancer": [
+      { "feature": "DEMOGIDX_2", "shap": -4.196543932752684 },
+      { "feature": "P_DSLPM", "shap": -4.008971101865172 },
+      { "feature": "P_OZONE", "shap": 2.4136062737670727 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -6.725943535832921 },
+      { "feature": "DEMOGIDX_2", "shap": -3.461512557165697 },
+      { "feature": "P_PM25", "shap": -1.7516863557323814 }
+    ]
+  },
+  "46125965200": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -5.458564049527049 },
+      { "feature": "DEMOGIDX_2", "shap": -3.1090861131064593 },
+      { "feature": "P_OZONE", "shap": 2.5207406655605884 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -7.590427647274919 },
+      { "feature": "P_PM25", "shap": 3.1324392812047153 },
+      { "feature": "DEMOGIDX_2", "shap": -2.4240424060914667 }
+    ]
+  },
+  "46127020100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 15.867561044157483 },
+      { "feature": "P_DSLPM", "shap": 2.71629987440072 },
+      { "feature": "DEMOGIDX_2", "shap": -2.5634440456610172 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.501789702652022 },
+      { "feature": "DEMOGIDX_2", "shap": -3.7134158300084525 },
+      { "feature": "P_DSLPM", "shap": -3.6810465194436257 }
+    ]
+  },
+  "46127020200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 17.370479519874788 },
+      { "feature": "P_PTSDF", "shap": 5.400342522319407 },
+      { "feature": "P_DSLPM", "shap": 4.2317305520456285 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 8.858726993370801 },
+      { "feature": "DEMOGIDX_2", "shap": -4.0016150794771965 },
+      { "feature": "P_PWDIS", "shap": -1.5513679793756454 }
+    ]
+  },
+  "46127020301": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 15.794137784126214 },
+      { "feature": "P_DSLPM", "shap": 4.921220010444522 },
+      { "feature": "P_LDPNT", "shap": -3.42337334765587 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 13.24096993956715 },
+      { "feature": "DEMOGIDX_2", "shap": -1.9201802946662065 },
+      { "feature": "P_LDPNT", "shap": -1.2768410372175276 }
+    ]
+  },
+  "46127020302": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 16.186170807019806 },
+      { "feature": "P_DSLPM", "shap": 4.948766214419156 },
+      { "feature": "DEMOGIDX_2", "shap": -2.2859111649915578 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 13.24670341366902 },
+      { "feature": "DEMOGIDX_2", "shap": -3.227165505256271 },
+      { "feature": "P_UST", "shap": -0.7503198584821075 }
+    ]
+  },
+  "46129965100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -8.358713597832248 },
+      { "feature": "P_DSLPM", "shap": -8.29742473712191 },
+      { "feature": "DEMOGIDX_2", "shap": -2.2322268258035183 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -14.324343355994205 },
+      { "feature": "P_PM25", "shap": -7.813676377125084 },
+      { "feature": "DEMOGIDX_2", "shap": -2.6455121221311857 }
+    ]
+  },
+  "46129965200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": -9.986533365463838 },
+      { "feature": "P_DSLPM", "shap": -7.882216493505984 },
+      { "feature": "P_OZONE", "shap": -1.2243002565926873 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -13.61775144298328 },
+      { "feature": "P_PM25", "shap": -9.15964893160388 },
+      { "feature": "P_PNPL", "shap": -1.7417646090849304 }
+    ]
+  },
+  "46135966100": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 12.790900219501928 },
+      { "feature": "P_DSLPM", "shap": 5.356716107204557 },
+      { "feature": "P_PTSDF", "shap": 4.572023292519152 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.865431252303534 },
+      { "feature": "P_DSLPM", "shap": 5.848939813239267 },
+      { "feature": "P_PTSDF", "shap": 2.09774876145646 }
+    ]
+  },
+  "46135966200": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 10.919680563663132 },
+      { "feature": "P_PTSDF", "shap": 4.17040899798274 },
+      { "feature": "DEMOGIDX_2", "shap": -2.51886919664219 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.239823048594408 },
+      { "feature": "P_DSLPM", "shap": -4.927360823918134 },
+      { "feature": "DEMOGIDX_2", "shap": -2.5301180397940333 }
+    ]
+  },
+  "46135966301": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 8.110495432117023 },
+      { "feature": "DEMOGIDX_2", "shap": -3.71089835787192 },
+      { "feature": "P_DSLPM", "shap": 2.759037670632824 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 6.82213180125691 },
+      { "feature": "DEMOGIDX_2", "shap": -4.570892794834217 },
+      { "feature": "P_DSLPM", "shap": -1.6023326219432057 }
+    ]
+  },
+  "46135966302": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 10.648315215427429 },
+      { "feature": "P_DSLPM", "shap": 4.760759116047994 },
+      { "feature": "P_PTSDF", "shap": 4.394329389864579 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": 7.273748076003976 },
+      { "feature": "P_DSLPM", "shap": 4.923653942089295 },
+      { "feature": "P_PWDIS", "shap": 1.3108290681568906 }
+    ]
+  },
+  "46135966400": {
+    "cancer": [
+      { "feature": "P_PM25", "shap": 7.693089530994184 },
+      { "feature": "P_DSLPM", "shap": -5.394453722825274 },
+      { "feature": "DEMOGIDX_2", "shap": -4.152564245630056 }
+    ],
+    "resp": [
+      { "feature": "P_DSLPM", "shap": -7.804032698185183 },
+      { "feature": "P_PM25", "shap": 5.249173416262493 },
+      { "feature": "DEMOGIDX_2", "shap": -4.605369893487077 }
+    ]
+  },
+  "46137941600": {
+    "cancer": [
+      { "feature": "P_DSLPM", "shap": -9.286889360593632 },
+      { "feature": "P_PM25", "shap": -9.14895983543247 },
+      { "feature": "P_OZONE", "shap": -5.750744949516375 }
+    ],
+    "resp": [
+      { "feature": "P_PM25", "shap": -10.99538212159183 },
+      { "feature": "P_DSLPM", "shap": -10.939693750133738 },
+      { "feature": "P_OZONE", "shap": -4.713043749177595 }
+    ]
+  }
+}
