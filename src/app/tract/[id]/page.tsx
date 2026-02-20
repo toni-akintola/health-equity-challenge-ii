@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getTractById, type TractRecord } from "@/src/lib/tract-data";
+import { getTractById } from "@/src/lib/tract-data";
+import { PolicyProposalDialog } from "@/src/components/PolicyProposalDialog";
 
 // Group CSV columns into sections for the detail page
 const SECTIONS: { title: string; keys: string[] }[] = [
@@ -195,6 +196,22 @@ export default async function TractPage({
 
       <main className="mx-auto max-w-4xl px-6 py-8">
         <div className="space-y-8">
+          <section className="rounded-lg border border-blue-100 bg-blue-50/50 p-6 shadow-sm">
+            <h2 className="mb-2 text-lg font-semibold text-slate-800">
+              Policy recommendation
+            </h2>
+            <p className="mb-4 text-sm text-slate-600">
+              Generate a bespoke state or local policy proposal for this tract
+              using its risk drivers and the NCSL legislation database. The
+              proposal will include citations and can be downloaded as PDF.
+            </p>
+            <PolicyProposalDialog
+              tractId={id}
+              tractLabel={[tract["CNTY_NAME"], tract["ST_ABBREV"]]
+                .filter(Boolean)
+                .join(", ")}
+            />
+          </section>
           {SECTIONS.map((section) => {
             const entries = section.keys
               .filter((key) => key in tract)

@@ -11,6 +11,14 @@
     "build-shap-json": "node scripts/build-shap-json.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.2",
+    "marked": "^15.0.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "openai": "^4.73.0",
     "maplibre-gl": "^4.7.0",
     "next": "^15.0.0",
     "react": "^19.0.0",
@@ -26,7 +34,9 @@
     "eslint-config-next": "^15.0.0",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.0.0"
   }
 }

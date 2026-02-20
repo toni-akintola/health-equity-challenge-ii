@@ -31,12 +31,22 @@ Open [http://localhost:3000](http://localhost:3000). Use the sidebar to pick sta
 
 ## Scripts
 
-| Command                  | Description                          |
-| ------------------------ | ------------------------------------ |
-| `npm run dev`            | Start Next.js dev server             |
-| `npm run build`          | Production build                     |
-| `npm run start`          | Run production server                |
-| `npm run export-geojson` | Run the Python GeoJSON export script |
+| Command                   | Description                                           |
+| ------------------------- | ----------------------------------------------------- |
+| `npm run dev`             | Start Next.js dev server                              |
+| `npm run build`           | Production build                                      |
+| `npm run start`           | Run production server                                 |
+| `npm run export-geojson`  | Run the Python GeoJSON export script                  |
+| `npm run build-shap-json` | Build per-state SHAP JSON from `.data/tract_shap.csv` |
+
+### 3. Policy proposal API (optional)
+
+The app can generate a bespoke policy proposal for a census tract using an LLM with access to tract data (including demographics), SHAP risk drivers, the NCSL legislation database, and optional web search for state/county politics.
+
+1. Add your OpenAI API key to `.env.local` (see `.env.example`).
+2. Optionally add `EXA_API_KEY` to enable web search so the model can look up state legislature, governor, and political context to tailor recommendations (see [exa.ai](https://exa.ai)).
+3. Run `npm run build-shap-json` if you have `.data/tract_shap.csv` (from the SHAP notebook).
+4. Send a `POST` request to `/api/tract/[id]/policy-proposal` with the tract ID (11-digit geoid or numeric). The response includes a `proposal` field with the generated text (Markdown, with citations).
 
 ## Legacy Dash app
 
