@@ -10,6 +10,7 @@ import Map, {
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { getShapFeatureLabel } from "@/src/lib/shap-labels";
+import { StateProposalDialog } from "@/src/components/StateProposalDialog";
 
 function geoid11(id: number | string): string {
   const num = String(id).replace(/\D/g, "");
@@ -279,6 +280,19 @@ export function EJScreenMap() {
               </option>
             ))}
           </select>
+        </div>
+        <div className="border-t border-slate-200 pt-4">
+          <label className="block text-sm font-medium text-slate-700 mb-2">
+            State Policy Proposal
+          </label>
+          <p className="text-xs text-slate-500 mb-3">
+            Generate a state-level policy recommendation based on county-level
+            data. Select exactly one state to enable.
+          </p>
+          <StateProposalDialog
+            stateAbbrev={selectedStates[0] ?? ""}
+            disabled={selectedStates.length !== 1}
+          />
         </div>
       </aside>
       <div className="flex-1 min-h-[420px] relative z-0 isolate">

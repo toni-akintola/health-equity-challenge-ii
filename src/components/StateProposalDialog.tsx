@@ -16,9 +16,10 @@ import { ProposalMarkdown } from "@/src/components/ProposalMarkdown";
 import { cn } from "@/src/lib/utils";
 
 const WORKFLOW_STEPS = [
-  "Preparing tract data and risk factors",
+  "Aggregating county-level data",
+  "Analyzing statewide risk patterns",
   "Searching NCSL for relevant legislation",
-  "Drafting policy recommendation",
+  "Drafting state-level policy recommendation",
 ] as const;
 
 type StepStatus = "pending" | "active" | "done";
@@ -31,7 +32,7 @@ function StepRow({ label, status }: { label: string; status: StepStatus }) {
           "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-medium",
           status === "done" && "bg-emerald-100 text-emerald-700",
           status === "active" && "bg-slate-900 text-white animate-pulse",
-          status === "pending" && "bg-slate-100 text-slate-400",
+          status === "pending" && "bg-slate-100 text-slate-400"
         )}
       >
         {status === "done" ? "✓" : status === "active" ? "..." : "—"}
@@ -41,7 +42,7 @@ function StepRow({ label, status }: { label: string; status: StepStatus }) {
           "text-sm",
           status === "done" && "text-slate-600",
           status === "active" && "font-medium text-slate-900",
-          status === "pending" && "text-slate-400",
+          status === "pending" && "text-slate-400"
         )}
       >
         {label}
@@ -50,14 +51,14 @@ function StepRow({ label, status }: { label: string; status: StepStatus }) {
   );
 }
 
-type Props = { tractId: string; tractLabel?: string };
+type Props = {
+  stateAbbrev: string;
+  disabled?: boolean;
+};
 
-async function downloadProposalAsPdf(
-  proposalMarkdown: string,
-  tractLabel: string,
-) {
+async function downloadProposalAsPdf(proposalMarkdown: string, stateLabel: string) {
   const htmlContent = await marked.parse(proposalMarkdown);
-  const title = `Policy proposal – ${tractLabel}`;
+  const title = `State policy proposal – ${stateLabel}`;
   const doc = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +77,7 @@ async function downloadProposalAsPdf(
   </style>
 </head>
 <body>
-  <p class="header">${tractLabel}</p>
+  <p class="header">State: ${stateLabel}</p>
   <div>${htmlContent}</div>
   <script>window.onload = function() { window.print(); window.onafterprint = function() { window.close(); }; }</script>
 </body>
@@ -88,23 +89,14 @@ async function downloadProposalAsPdf(
   else URL.revokeObjectURL(url);
 }
 
-export function PolicyProposalDialog({
-  tractId,
-  tractLabel = "Census tract",
-}: Props) {
+export function StateProposalDialog({ stateAbbrev, disabled }: Props) {
   const [open, setOpen] = useState(false);
-  const [phase, setPhase] = useState<"idle" | "generating" | "done" | "error">(
-    "idle",
-  );
+  const [phase, setPhase] = useState<"idle" | "generating" | "done" | "error">("idle");
   const [stepIndex, setStepIndex] = useState(0);
   const [proposal, setProposal] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [meta, setMeta] = useState<{ county?: string; state?: string } | null>(
-    null,
-  );
-  const [proposalTextSize, setProposalTextSize] = useState<"small" | "normal">(
-    "small",
-  );
+  const [meta, setMeta] = useState<{ countyCount?: number; tractCount?: number } | null>(null);
+  const [proposalTextSize, setProposalTextSize] = useState<"small" | "normal">("small");
 
   const startGenerate = useCallback(() => {
     setPhase("generating");
@@ -118,7 +110,7 @@ export function PolicyProposalDialog({
 
     const timer = setInterval(() => {
       setStepIndex((i) => Math.min(i + 1, WORKFLOW_STEPS.length - 1));
-    }, 3200);
+    }, 4000);
     return () => clearInterval(timer);
   }, [open, phase]);
 
@@ -126,7 +118,7 @@ export function PolicyProposalDialog({
     if (!open || phase !== "generating") return;
 
     const controller = new AbortController();
-    fetch(`/api/tract/${tractId}/policy-proposal`, {
+    fetch(`/api/state/${stateAbbrev}/policy-proposal`, {
       method: "POST",
       signal: controller.signal,
     })
@@ -138,19 +130,27 @@ export function PolicyProposalDialog({
         }
         return res.json();
       })
-      .then((data: { proposal?: string; county?: string; state?: string }) => {
-        setStepIndex(WORKFLOW_STEPS.length);
-        setProposal(data.proposal ?? "");
-        setMeta({ county: data.county, state: data.state });
-        setPhase("done");
-      })
+      .then(
+        (data: {
+          proposal?: string;
+          state?: string;
+          countyCount?: number;
+          tractCount?: number;
+        }) => {
+          setStepIndex(WORKFLOW_STEPS.length);
+          setProposal(data.proposal ?? "");
+          setMeta({ countyCount: data.countyCount, tractCount: data.tractCount });
+          setPhase("done");
+        }
+      )
       .catch((err) => {
+        if (err.name === "AbortError") return;
         setError(err instanceof Error ? err.message : String(err));
         setPhase("error");
       });
 
     return () => controller.abort();
-  }, [open, tractId, phase]);
+  }, [open, stateAbbrev, phase]);
 
   const handleOpenChange = useCallback((next: boolean) => {
     if (!next) {
@@ -166,25 +166,26 @@ export function PolicyProposalDialog({
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
-        <Button variant="default" size="sm">
-          Generate policy proposal
+        <Button variant="default" size="sm" disabled={disabled}>
+          Generate state policy proposal
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[90vh] flex flex-col max-w-3xl w-[95vw]">
         <DialogHeader>
-          <DialogTitle>Policy proposal</DialogTitle>
+          <DialogTitle>State policy proposal: {stateAbbrev}</DialogTitle>
           <DialogDescription>
-            Generate a bespoke state or local policy recommendation for this
-            tract using its risk factors and the NCSL legislation database.
+            Generate a state-level policy recommendation based on county-level
+            environmental data and the NCSL legislation database.
           </DialogDescription>
         </DialogHeader>
 
         {phase === "idle" && (
           <div className="py-4">
             <p className="text-sm text-slate-600 mb-4">
-              This will use the tract’s environmental and demographic data, SHAP
-              risk drivers, and the NCSL Environment & Natural Resources
-              Legislation Database to draft a short policy proposal.
+              This will aggregate all census tracts in {stateAbbrev} by county,
+              analyze statewide risk patterns and SHAP drivers, query the NCSL
+              Environment & Natural Resources Legislation Database, and draft a
+              state-level policy proposal.
             </p>
             <Button onClick={startGenerate}>Generate</Button>
           </div>
@@ -215,6 +216,11 @@ export function PolicyProposalDialog({
             <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
               <p className="text-sm font-medium text-slate-700">
                 Recommendation
+                {meta && (
+                  <span className="ml-2 text-xs font-normal text-slate-500">
+                    ({meta.countyCount} counties, {meta.tractCount} tracts)
+                  </span>
+                )}
               </p>
               <div className="flex items-center gap-2">
                 <span className="text-xs text-slate-500">Text size:</span>
@@ -227,9 +233,7 @@ export function PolicyProposalDialog({
                   Smaller
                 </Button>
                 <Button
-                  variant={
-                    proposalTextSize === "normal" ? "secondary" : "ghost"
-                  }
+                  variant={proposalTextSize === "normal" ? "secondary" : "ghost"}
                   size="sm"
                   className="h-7 text-xs"
                   onClick={() => setProposalTextSize("normal")}
@@ -239,33 +243,21 @@ export function PolicyProposalDialog({
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() =>
-                    downloadProposalAsPdf(
-                      proposal,
-                      meta?.county && meta?.state
-                        ? `${meta.county}, ${meta.state}`
-                        : tractLabel,
-                    )
-                  }
+                  onClick={() => downloadProposalAsPdf(proposal, stateAbbrev)}
                 >
                   Download PDF
                 </Button>
               </div>
             </div>
             <div className="flex-1 min-h-[320px] max-h-[70vh] overflow-y-auto rounded-md border border-slate-200 bg-slate-50 p-5">
-              <ProposalMarkdown
-                content={proposal}
-                compact={proposalTextSize === "small"}
-              />
+              <ProposalMarkdown content={proposal} compact={proposalTextSize === "small"} />
             </div>
           </div>
         )}
 
         {phase === "error" && (
           <div className="border-t border-slate-100 pt-4">
-            <p className="text-sm font-medium text-red-700 mb-1">
-              Something went wrong
-            </p>
+            <p className="text-sm font-medium text-red-700 mb-1">Something went wrong</p>
             <p className="text-sm text-slate-600">{error}</p>
           </div>
         )}

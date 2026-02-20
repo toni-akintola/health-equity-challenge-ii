@@ -4,6 +4,14 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { cn } from "@/src/lib/utils";
 
+/** Strip markdown code fence if the LLM wrapped the proposal in ```markdown ... ``` or ``` ... ``` */
+function unwrapMarkdownCodeBlock(raw: string): string {
+  const trimmed = raw.trim();
+  const fenceMatch = trimmed.match(/^```(?:markdown|md)?\s*\n?([\s\S]*?)\n?```\s*$/m);
+  if (fenceMatch) return fenceMatch[1].trim();
+  return trimmed;
+}
+
 const markdownComponents = {
   h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1 className="mt-4 mb-2 text-lg font-semibold text-slate-900" {...props}>
@@ -168,11 +176,18 @@ export function ProposalMarkdown({
       }
     : markdownComponents;
 
+  const markdownSource = unwrapMarkdownCodeBlock(content);
+
   return (
-    <div className={cn("text-slate-800 max-w-none", className)}>
+    <article
+      className={cn(
+        "proposal-markdown text-slate-800 max-w-none [&_h1]:mt-4 [&_h1]:mb-2 [&_h2]:mt-3 [&_h2]:mb-1.5 [&_h3]:mt-2 [&_h3]:mb-1 [&_ul]:list-disc [&_ol]:list-decimal [&_ul]:pl-6 [&_ol]:pl-6",
+        className
+      )}
+    >
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
-        {content}
+        {markdownSource}
       </ReactMarkdown>
-    </div>
+    </article>
   );
 }
