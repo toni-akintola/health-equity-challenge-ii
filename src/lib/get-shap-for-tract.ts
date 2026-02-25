@@ -1,5 +1,9 @@
 import path from "path";
 import fs from "fs/promises";
+import {
+  getStaticAssetBaseUrl,
+  loadJsonFromStaticAsset,
+} from "./static-asset-url";
 
 const SHAP_DIR = path.join(process.cwd(), "public", "data", "shap");
 
@@ -22,9 +26,13 @@ export async function getShapForTract(
   stateAbbrev: string,
 ): Promise<TractShapData | null> {
   const geoid = geoid11(tractId);
-  const filePath = path.join(SHAP_DIR, `${stateAbbrev}.json`);
+  const baseUrl = getStaticAssetBaseUrl();
   try {
-    const raw = await fs.readFile(filePath, "utf-8");
+    const raw = await loadJsonFromStaticAsset(
+      baseUrl,
+      `/data/shap/${stateAbbrev}.json`,
+      () => fs.readFile(path.join(SHAP_DIR, `${stateAbbrev}.json`), "utf-8"),
+    );
     const data = JSON.parse(raw) as Record<string, TractShapData>;
     return data[geoid] ?? null;
   } catch {

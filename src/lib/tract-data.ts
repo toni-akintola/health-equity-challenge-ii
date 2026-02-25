@@ -1,5 +1,9 @@
 import path from "path";
 import fs from "fs/promises";
+import {
+  getStaticAssetBaseUrl,
+  loadJsonFromStaticAsset,
+} from "./static-asset-url";
 
 const GEOJSON_DIR = path.join(process.cwd(), "public", "geojson");
 
@@ -12,9 +16,12 @@ function geoid11(id: string): string {
 
 async function getStateFipsMap(): Promise<Record<string, string>> {
   if (stateFipsMap) return stateFipsMap;
-  const raw = await fs.readFile(
-    path.join(GEOJSON_DIR, "state-fips.json"),
-    "utf-8",
+  const baseUrl = getStaticAssetBaseUrl();
+  const raw = await loadJsonFromStaticAsset(
+    baseUrl,
+    "/geojson/state-fips.json",
+    () =>
+      fs.readFile(path.join(GEOJSON_DIR, "state-fips.json"), "utf-8"),
   );
   stateFipsMap = JSON.parse(raw) as Record<string, string>;
   return stateFipsMap;
@@ -39,10 +46,16 @@ export async function getTractById(id: string): Promise<TractRecord | null> {
   if (!stateAbbrev) return null;
 
   let fc: GeoJSONFC;
+  const baseUrl = getStaticAssetBaseUrl();
   try {
-    const raw = await fs.readFile(
-      path.join(GEOJSON_DIR, `${stateAbbrev}.geojson`),
-      "utf-8",
+    const raw = await loadJsonFromStaticAsset(
+      baseUrl,
+      `/geojson/${stateAbbrev}.geojson`,
+      () =>
+        fs.readFile(
+          path.join(GEOJSON_DIR, `${stateAbbrev}.geojson`),
+          "utf-8",
+        ),
     );
     fc = JSON.parse(raw) as GeoJSONFC;
   } catch {

@@ -2,6 +2,10 @@ import path from "path";
 import fs from "fs/promises";
 import { TractShapData, TractShapEntry } from "./get-shap-for-tract";
 import { getShapFeatureLabel } from "./shap-labels";
+import {
+  getStaticAssetBaseUrl,
+  loadJsonFromStaticAsset,
+} from "./static-asset-url";
 
 const GEOJSON_DIR = path.join(process.cwd(), "public", "geojson");
 const SHAP_DIR = path.join(process.cwd(), "public", "data", "shap");
@@ -84,11 +88,17 @@ export async function getStateSummary(
 ): Promise<StateSummary | null> {
   const upperState = stateAbbrev.toUpperCase();
 
+  const baseUrl = getStaticAssetBaseUrl();
   let fc: GeoJSONFC;
   try {
-    const raw = await fs.readFile(
-      path.join(GEOJSON_DIR, `${upperState}.geojson`),
-      "utf-8",
+    const raw = await loadJsonFromStaticAsset(
+      baseUrl,
+      `/geojson/${upperState}.geojson`,
+      () =>
+        fs.readFile(
+          path.join(GEOJSON_DIR, `${upperState}.geojson`),
+          "utf-8",
+        ),
     );
     fc = JSON.parse(raw) as GeoJSONFC;
   } catch {
@@ -97,9 +107,11 @@ export async function getStateSummary(
 
   let shapData: Record<string, TractShapData> = {};
   try {
-    const raw = await fs.readFile(
-      path.join(SHAP_DIR, `${upperState}.json`),
-      "utf-8",
+    const raw = await loadJsonFromStaticAsset(
+      baseUrl,
+      `/data/shap/${upperState}.json`,
+      () =>
+        fs.readFile(path.join(SHAP_DIR, `${upperState}.json`), "utf-8"),
     );
     shapData = JSON.parse(raw) as Record<string, TractShapData>;
   } catch {
