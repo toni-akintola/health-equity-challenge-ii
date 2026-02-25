@@ -13,6 +13,12 @@ export const SHAP_FEATURE_LABELS: Record<string, string> = {
   P_UST: "UST proximity",
   P_PWDIS: "Wastewater discharge",
   DEMOGIDX_2: "Demographic index (low income + minority)",
+  // EJI 2024
+  RPL_EJI: "EJI overall percentile",
+  RPL_SER: "EJI socioeconomic rank",
+  RPL_SVM: "EJI social vulnerability",
+  RPL_EBM: "EJI environmental burden",
+  RPL_EJI_CBM: "EJI climate burden",
 };
 
 export function getShapFeatureLabel(feature: string): string {
