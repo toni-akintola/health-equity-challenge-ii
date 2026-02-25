@@ -32,7 +32,7 @@ function StepRow({ label, status }: { label: string; status: StepStatus }) {
           "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-medium",
           status === "done" && "bg-emerald-100 text-emerald-700",
           status === "active" && "bg-slate-900 text-white animate-pulse",
-          status === "pending" && "bg-slate-100 text-slate-400"
+          status === "pending" && "bg-slate-100 text-slate-400",
         )}
       >
         {status === "done" ? "✓" : status === "active" ? "..." : "—"}
@@ -42,7 +42,7 @@ function StepRow({ label, status }: { label: string; status: StepStatus }) {
           "text-sm",
           status === "done" && "text-slate-600",
           status === "active" && "font-medium text-slate-900",
-          status === "pending" && "text-slate-400"
+          status === "pending" && "text-slate-400",
         )}
       >
         {label}
@@ -56,7 +56,10 @@ type Props = {
   disabled?: boolean;
 };
 
-async function downloadProposalAsPdf(proposalMarkdown: string, stateLabel: string) {
+async function downloadProposalAsPdf(
+  proposalMarkdown: string,
+  stateLabel: string,
+) {
   const htmlContent = await marked.parse(proposalMarkdown);
   const title = `State policy proposal – ${stateLabel}`;
   const doc = `<!DOCTYPE html>
@@ -91,12 +94,19 @@ async function downloadProposalAsPdf(proposalMarkdown: string, stateLabel: strin
 
 export function StateProposalDialog({ stateAbbrev, disabled }: Props) {
   const [open, setOpen] = useState(false);
-  const [phase, setPhase] = useState<"idle" | "generating" | "done" | "error">("idle");
+  const [phase, setPhase] = useState<"idle" | "generating" | "done" | "error">(
+    "idle",
+  );
   const [stepIndex, setStepIndex] = useState(0);
   const [proposal, setProposal] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [meta, setMeta] = useState<{ countyCount?: number; tractCount?: number } | null>(null);
-  const [proposalTextSize, setProposalTextSize] = useState<"small" | "normal">("small");
+  const [meta, setMeta] = useState<{
+    countyCount?: number;
+    tractCount?: number;
+  } | null>(null);
+  const [proposalTextSize, setProposalTextSize] = useState<"small" | "normal">(
+    "small",
+  );
 
   const startGenerate = useCallback(() => {
     setPhase("generating");
@@ -139,9 +149,12 @@ export function StateProposalDialog({ stateAbbrev, disabled }: Props) {
         }) => {
           setStepIndex(WORKFLOW_STEPS.length);
           setProposal(data.proposal ?? "");
-          setMeta({ countyCount: data.countyCount, tractCount: data.tractCount });
+          setMeta({
+            countyCount: data.countyCount,
+            tractCount: data.tractCount,
+          });
           setPhase("done");
-        }
+        },
       )
       .catch((err) => {
         if (err.name === "AbortError") return;
@@ -233,7 +246,9 @@ export function StateProposalDialog({ stateAbbrev, disabled }: Props) {
                   Smaller
                 </Button>
                 <Button
-                  variant={proposalTextSize === "normal" ? "secondary" : "ghost"}
+                  variant={
+                    proposalTextSize === "normal" ? "secondary" : "ghost"
+                  }
                   size="sm"
                   className="h-7 text-xs"
                   onClick={() => setProposalTextSize("normal")}
@@ -250,14 +265,19 @@ export function StateProposalDialog({ stateAbbrev, disabled }: Props) {
               </div>
             </div>
             <div className="flex-1 min-h-[320px] max-h-[70vh] overflow-y-auto rounded-md border border-slate-200 bg-slate-50 p-5">
-              <ProposalMarkdown content={proposal} compact={proposalTextSize === "small"} />
+              <ProposalMarkdown
+                content={proposal}
+                compact={proposalTextSize === "small"}
+              />
             </div>
           </div>
         )}
 
         {phase === "error" && (
           <div className="border-t border-slate-100 pt-4">
-            <p className="text-sm font-medium text-red-700 mb-1">Something went wrong</p>
+            <p className="text-sm font-medium text-red-700 mb-1">
+              Something went wrong
+            </p>
             <p className="text-sm text-slate-600">{error}</p>
           </div>
         )}

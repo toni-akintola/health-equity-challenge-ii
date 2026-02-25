@@ -46,18 +46,21 @@ const WEB_SEARCH_TOOL: OpenAI.Chat.Completions.ChatCompletionTool = {
 
 export async function POST(
   _request: Request,
-  { params }: { params: Promise<{ abbrev: string }> }
+  { params }: { params: Promise<{ abbrev: string }> },
 ) {
   const { abbrev } = await params;
   if (!abbrev) {
-    return NextResponse.json({ error: "Missing state abbreviation" }, { status: 400 });
+    return NextResponse.json(
+      { error: "Missing state abbreviation" },
+      { status: 400 },
+    );
   }
 
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     return NextResponse.json(
       { error: "OPENAI_API_KEY is not set. Add it to .env.local." },
-      { status: 503 }
+      { status: 503 },
     );
   }
 
@@ -65,7 +68,7 @@ export async function POST(
   if (!summary) {
     return NextResponse.json(
       { error: `State not found or no data for: ${abbrev}` },
-      { status: 404 }
+      { status: 404 },
     );
   }
 
@@ -114,7 +117,10 @@ ${stateContext}`;
   let round = 0;
   let lastMessage: OpenAI.Chat.Completions.ChatCompletionMessage | null = null;
 
-  const tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [NCSL_TOOL, WEB_SEARCH_TOOL];
+  const tools: OpenAI.Chat.Completions.ChatCompletionTool[] = [
+    NCSL_TOOL,
+    WEB_SEARCH_TOOL,
+  ];
 
   while (round < maxToolRounds) {
     const completion = await client.chat.completions.create({
@@ -127,7 +133,10 @@ ${stateContext}`;
 
     lastMessage = completion.choices[0]?.message ?? null;
     if (!lastMessage) {
-      return NextResponse.json({ error: "No response from model." }, { status: 502 });
+      return NextResponse.json(
+        { error: "No response from model." },
+        { status: 502 },
+      );
     }
 
     messages.push(lastMessage);
@@ -150,7 +159,9 @@ ${stateContext}`;
         name === "search_ncsl"
           ? await searchNCSL(query || "environmental legislation")
           : name === "web_search"
-            ? await webSearch(query || `${summary.stateAbbrev} environmental policy`)
+            ? await webSearch(
+                query || `${summary.stateAbbrev} environmental policy`,
+              )
             : "[Unknown tool.]";
       messages.push({
         role: "tool",

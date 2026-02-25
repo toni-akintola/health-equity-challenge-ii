@@ -6,8 +6,14 @@ import { getShapFeatureLabel } from "./shap-labels";
 const GEOJSON_DIR = path.join(process.cwd(), "public", "geojson");
 const SHAP_DIR = path.join(process.cwd(), "public", "data", "shap");
 
-type GeoJSONFeature = GeoJSON.Feature<GeoJSON.Geometry, Record<string, unknown>>;
-type GeoJSONFC = GeoJSON.FeatureCollection<GeoJSON.Geometry, Record<string, unknown>>;
+type GeoJSONFeature = GeoJSON.Feature<
+  GeoJSON.Geometry,
+  Record<string, unknown>
+>;
+type GeoJSONFC = GeoJSON.FeatureCollection<
+  GeoJSON.Geometry,
+  Record<string, unknown>
+>;
 
 const ENV_PERCENTILE_KEYS = [
   "P_CANCER",
@@ -57,7 +63,7 @@ function mean(arr: number[]): number {
 
 function countDrivers(
   shapEntries: TractShapEntry[][],
-  topN: number = 5
+  topN: number = 5,
 ): { feature: string; count: number }[] {
   const counts: Record<string, number> = {};
   for (const entries of shapEntries) {
@@ -73,12 +79,17 @@ function countDrivers(
     .slice(0, topN);
 }
 
-export async function getStateSummary(stateAbbrev: string): Promise<StateSummary | null> {
+export async function getStateSummary(
+  stateAbbrev: string,
+): Promise<StateSummary | null> {
   const upperState = stateAbbrev.toUpperCase();
 
   let fc: GeoJSONFC;
   try {
-    const raw = await fs.readFile(path.join(GEOJSON_DIR, `${upperState}.geojson`), "utf-8");
+    const raw = await fs.readFile(
+      path.join(GEOJSON_DIR, `${upperState}.geojson`),
+      "utf-8",
+    );
     fc = JSON.parse(raw) as GeoJSONFC;
   } catch {
     return null;
@@ -86,7 +97,10 @@ export async function getStateSummary(stateAbbrev: string): Promise<StateSummary
 
   let shapData: Record<string, TractShapData> = {};
   try {
-    const raw = await fs.readFile(path.join(SHAP_DIR, `${upperState}.json`), "utf-8");
+    const raw = await fs.readFile(
+      path.join(SHAP_DIR, `${upperState}.json`),
+      "utf-8",
+    );
     shapData = JSON.parse(raw) as Record<string, TractShapData>;
   } catch {
     // SHAP data optional
@@ -161,18 +175,26 @@ export async function getStateSummary(stateAbbrev: string): Promise<StateSummary
     allRespShap.push(...shapResp);
   }
 
-  counties.sort((a, b) => (b.avgCancer + b.avgResp) / 2 - (a.avgCancer + a.avgResp) / 2);
+  counties.sort(
+    (a, b) => (b.avgCancer + b.avgResp) / 2 - (a.avgCancer + a.avgResp) / 2,
+  );
 
   const totalTracts = counties.reduce((s, c) => s + c.tractCount, 0);
   const stateAvgEnv: Record<string, number> = {};
   const stateAvgDemo: Record<string, number> = {};
 
   for (const k of ENV_PERCENTILE_KEYS) {
-    const weighted = counties.reduce((s, c) => s + c.avgEnv[k] * c.tractCount, 0);
+    const weighted = counties.reduce(
+      (s, c) => s + c.avgEnv[k] * c.tractCount,
+      0,
+    );
     stateAvgEnv[k] = totalTracts > 0 ? weighted / totalTracts : 0;
   }
   for (const k of DEMO_PERCENTILE_KEYS) {
-    const weighted = counties.reduce((s, c) => s + c.avgDemo[k] * c.tractCount, 0);
+    const weighted = counties.reduce(
+      (s, c) => s + c.avgDemo[k] * c.tractCount,
+      0,
+    );
     stateAvgDemo[k] = totalTracts > 0 ? weighted / totalTracts : 0;
   }
 
@@ -194,25 +216,33 @@ export function buildStateContext(summary: StateSummary): string {
   const lines: string[] = [];
 
   lines.push(`# State: ${summary.stateAbbrev}`);
-  lines.push(`Total tracts: ${summary.tractCount} | Counties: ${summary.countyCount}`);
+  lines.push(
+    `Total tracts: ${summary.tractCount} | Counties: ${summary.countyCount}`,
+  );
   lines.push("");
 
   lines.push("## Statewide Averages (percentiles)");
   lines.push(`- Cancer risk: ${summary.avgCancer.toFixed(1)}`);
   lines.push(`- Respiratory risk: ${summary.avgResp.toFixed(1)}`);
-  lines.push(`- Low-income population: ${summary.avgDemo["P_LOWINCPCT"]?.toFixed(1) ?? "N/A"}`);
-  lines.push(`- People of color: ${summary.avgDemo["P_PEOPCOLORPCT"]?.toFixed(1) ?? "N/A"}`);
+  lines.push(
+    `- Low-income population: ${summary.avgDemo["P_LOWINCPCT"]?.toFixed(1) ?? "N/A"}`,
+  );
+  lines.push(
+    `- People of color: ${summary.avgDemo["P_PEOPCOLORPCT"]?.toFixed(1) ?? "N/A"}`,
+  );
   lines.push("");
 
-  lines.push("## Statewide Top Risk Drivers (SHAP analysis, by frequency across tracts)");
+  lines.push(
+    "## Statewide Top Risk Drivers (SHAP analysis, by frequency across tracts)",
+  );
   if (summary.topCancerDrivers.length) {
     lines.push(
-      `- Cancer: ${summary.topCancerDrivers.map((d) => `${getShapFeatureLabel(d.feature)} (${d.count} tracts)`).join(", ")}`
+      `- Cancer: ${summary.topCancerDrivers.map((d) => `${getShapFeatureLabel(d.feature)} (${d.count} tracts)`).join(", ")}`,
     );
   }
   if (summary.topRespDrivers.length) {
     lines.push(
-      `- Respiratory: ${summary.topRespDrivers.map((d) => `${getShapFeatureLabel(d.feature)} (${d.count} tracts)`).join(", ")}`
+      `- Respiratory: ${summary.topRespDrivers.map((d) => `${getShapFeatureLabel(d.feature)} (${d.count} tracts)`).join(", ")}`,
     );
   }
   lines.push("");
@@ -220,18 +250,28 @@ export function buildStateContext(summary: StateSummary): string {
   const TOP_DETAIL = 15;
   const topCounties = summary.counties.slice(0, TOP_DETAIL);
 
-  lines.push(`## Top ${TOP_DETAIL} Highest-Risk Counties (by average cancer + respiratory risk)`);
+  lines.push(
+    `## Top ${TOP_DETAIL} Highest-Risk Counties (by average cancer + respiratory risk)`,
+  );
   lines.push("");
 
   for (const c of topCounties) {
     lines.push(`### ${c.name} (${c.tractCount} tracts)`);
-    lines.push(`- Avg cancer risk: ${c.avgCancer.toFixed(1)} | Avg respiratory risk: ${c.avgResp.toFixed(1)}`);
-    lines.push(`- Low-income: ${c.avgDemo["P_LOWINCPCT"]?.toFixed(1) ?? "N/A"} | People of color: ${c.avgDemo["P_PEOPCOLORPCT"]?.toFixed(1) ?? "N/A"}`);
+    lines.push(
+      `- Avg cancer risk: ${c.avgCancer.toFixed(1)} | Avg respiratory risk: ${c.avgResp.toFixed(1)}`,
+    );
+    lines.push(
+      `- Low-income: ${c.avgDemo["P_LOWINCPCT"]?.toFixed(1) ?? "N/A"} | People of color: ${c.avgDemo["P_PEOPCOLORPCT"]?.toFixed(1) ?? "N/A"}`,
+    );
     if (c.topCancerDrivers.length) {
-      lines.push(`- Top cancer drivers: ${c.topCancerDrivers.map((d) => getShapFeatureLabel(d.feature)).join(", ")}`);
+      lines.push(
+        `- Top cancer drivers: ${c.topCancerDrivers.map((d) => getShapFeatureLabel(d.feature)).join(", ")}`,
+      );
     }
     if (c.topRespDrivers.length) {
-      lines.push(`- Top respiratory drivers: ${c.topRespDrivers.map((d) => getShapFeatureLabel(d.feature)).join(", ")}`);
+      lines.push(
+        `- Top respiratory drivers: ${c.topRespDrivers.map((d) => getShapFeatureLabel(d.feature)).join(", ")}`,
+      );
     }
     lines.push("");
   }
@@ -244,7 +284,7 @@ export function buildStateContext(summary: StateSummary): string {
       const topDriver =
         c.topCancerDrivers[0]?.feature || c.topRespDrivers[0]?.feature || "—";
       lines.push(
-        `- ${c.name}: ${c.tractCount} tracts, cancer ${c.avgCancer.toFixed(0)}, resp ${c.avgResp.toFixed(0)}, top driver: ${getShapFeatureLabel(topDriver)}`
+        `- ${c.name}: ${c.tractCount} tracts, cancer ${c.avgCancer.toFixed(0)}, resp ${c.avgResp.toFixed(0)}, top driver: ${getShapFeatureLabel(topDriver)}`,
       );
     }
     lines.push("");
